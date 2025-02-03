@@ -1,0 +1,139 @@
+.load {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.load .containerLoadOne {
+  text-align: center;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  height: 0vh;
+  background-color: #fff;
+  width: 100%;
+  animation: scaleBackgoundOne 5s forwards;
+}
+.load .containerLoadTwo {
+  display: none;
+  overflow: hidden;
+  height: 25vh;
+  background-color: #fff;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  animation: scaleBackgoundTwo 5s forwards;
+}
+.load .containerLoadThree {
+  display: none;
+  height: 50vh;
+  overflow: hidden;
+  background-color: #fff;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  animation: scaleBackgoundThree 5s forwards;
+}
+.load .containerLoadFour {
+  display: none;
+  height: 75vh;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  animation: scaleBackgoundFour 5s forwards;
+}
+.load .fontBold {
+  font-weight: bold;
+}
+.load .textAnimation {
+  font-weight: bold;
+  font-size: 4em;
+  color: red;
+}
+.load .textAnimationOne {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: upText 0.5s forwards 4s, showText 3.5s forwards 4.5s;
+}
+.load .textAnimationTwo {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: upText 0.5s forwards, showText 3.5s forwards 4.5s;
+}
+.load .textAnimationThree {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: upText 0.5s forwards, showText 3.5s forwards 4.5s;
+}
+.load .textAnimationFour {
+  opacity: 0;
+  transform: translateY(100%);
+  animation: upText 0.5s forwards;
+}
+.load .loadNumber {
+  text-align: center;
+  background-color: red;
+  opacity: 0;
+  color: #fff;
+  padding: 2px 10px;
+  margin: 20px 15px 0px 0px;
+  border-radius: 18px;
+  animation: upText 0.5s forwards, showText 1.5s forwards 3.5s;
+}
+.load .tagPiloto {
+  position: relative;
+}
+.load .tagPiloto .piloto {
+  top: 10px;
+  left: -75px;
+  position: absolute;
+  animation: upText 0.5s forwards;
+  text-align: center;
+  background-color: red;
+  opacity: 0;
+  color: #fff;
+  padding: 2px 10px;
+  margin: 20px 15px 0px 0px;
+  border-radius: 18px;
+}
+
+@keyframes scaleBackgoundOne {
+  to {
+    height: 25vh;
+    display: none;
+  }
+}
+@keyframes scaleBackgoundTwo {
+  to {
+    height: 50vh;
+    display: none;
+  }
+}
+@keyframes scaleBackgoundThree {
+  to {
+    height: 75vh;
+    display: none;
+  }
+}
+@keyframes scaleBackgoundFour {
+  to {
+    height: 100vh;
+  }
+}
+@keyframes upText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes showText {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=style.css.map */
