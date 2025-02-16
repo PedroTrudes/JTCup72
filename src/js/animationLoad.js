@@ -28,8 +28,8 @@ setTimeout(() => {
 
 setTimeout(() => {
     containerLoad.style.display = "none"; 
-    containerWebHeader.style.display = "block";
-    containerWebPage.style.display = "block";
+    containerWebHeader.style.display = "flex";
+    containerWebPage.style.display = "flex";
 }, 18000)
 
 
