@@ -1,6 +1,6 @@
 main{
-    opacity: 0;
-    animation: slide-in-bottom 4s forwards;
+    //opacity: 0;
+    //animation: slide-in-bottom 4s forwards;
 }
 .containerVideo{
     position: relative;
@@ -15,9 +15,9 @@ main{
     overflow: hidden;
 
     img{
-        height: 300px;
-        opacity: 0;
-        animation: animationLogoBanner 5s forwards;
+        height: 9.0vw;
+        //opacity: 0;
+        //animation: animationLogoBanner 5s forwards;
     }
 
     video{
@@ -36,6 +36,7 @@ main{
     }
 }
 
+/*
 @keyframes animationLogoBanner {
     0%{
         transform: scale(0.1);
@@ -45,7 +46,6 @@ main{
         opacity: 1;
     }
 }
-
 @keyframes slide-in-bottom{
     0%{
         transform:translateY(1000px);
@@ -56,3 +56,4 @@ main{
         opacity:1
     }
 }
+    */

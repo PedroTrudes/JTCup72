@@ -1,0 +1,31 @@
+.containerNumbers{
+    padding: 200px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .numbers{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 40%;
+
+        .numbersSpecs{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .valueSpec{
+                font-size: 2em;
+                color: $red-color;
+                font-weight: $font-regular;
+            }
+
+            .titleSpec{
+                font-size: 1em;
+                color: $gray-color;
+                font-weight: $font-light;
+            }
+        }
+    }
+}
