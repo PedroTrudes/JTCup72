@@ -1,6 +1,37 @@
 .containerAboutUs{
     display: flex;
-    h1{
-        color: $red-color;
+    justify-content: space-around;
+    align-items: center;
+    .containerAboutText{
+        width: 40%;
+        
+ 
     }
+
+
+}
+
+//esse estilo vai ser usado em outros lugares
+.containerTextIndicator{
+    span{
+        background-color: $black-color;
+        //width: 144px;
+        padding: 6px 16px;
+        font-size: 0.8em;
+        color: $withe-color;
+        font-weight: $font-regular;
+        border-radius: $border-radius-section;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.151);
+    }    
+}
+.textTitle{
+    font-weight: $font-bold;
+    color: $red-color;
+    font-size: 2em;
+    margin: 20px 0px;
+}
+.textDescription{
+    font-weight: $font-regular;
+    color: $black-color;
+    font-size: 1.2em;
 }

@@ -34,11 +34,13 @@ header{
                     padding: 0px 20px;
                     a{
                         text-decoration: none;
-                        color: #FFF;
+                        color: $black-color;
+                        font-weight: $font-light;
                     }
                     .selectedHeader{
-                        color: $red-color!important;
-                        font-size: $font-bold!important;
+                        color: $red-color;
+                        font-weight: $font-bold;
+
                     }
                 }
             }
