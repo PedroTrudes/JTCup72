@@ -1,0 +1,90 @@
+.containerCategory{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
+
+    .containerCategoryText{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .textDescription{
+            max-width: 60%;
+        }
+    }
+
+    .containerCategoryApresentation{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 95px;
+        width: 75%;
+
+        .categoryBotton{
+            display: flex;
+            flex-direction: column;
+
+            .buttons{
+               display: flex;
+               align-items: center;
+               justify-content: center; 
+               width: 90px;
+               height: 90px;
+               border-radius: 55px;
+               margin: 25px; 
+               background-color: $black-color;
+               color: $withe-color;
+                :hover{
+                    cursor: pointer;
+                }
+            }
+            .isActive{
+                background-color: $red-color!important;
+            }
+        }
+
+        .categoryDivider{
+            height: 300px;
+            width: 5px;
+            background-color: #df8383;
+            border-radius: $border-radius-section;
+        }
+
+        .categoryDescription{
+            width: 50%;
+            .categoryText{
+                display: none;
+                max-width: 80%;
+                .buttonParticipate{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: $red-color;
+                    text-decoration: none;
+                    width: 252px;
+                    height: 50px;
+                    padding: 0px 10px;
+                    margin-top: 40px;
+                    border-radius: $border-radius-button;
+                    color: $withe-color;
+                    
+                    img{
+                        transition: transform 0.3s ease-in-out;
+                        &:hover{
+                            transform: rotate(45deg);
+
+                            //display: none;
+                        }
+
+                    }
+                }
+            }
+            .isActive{
+                display: block!important;
+            }
+        }
+
+    }
+}
