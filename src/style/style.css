@@ -423,6 +423,72 @@ header .containerHeader nav ul li .selectedHeader {
   display: block !important;
 }
 
+.containerTrack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 250px;
+}
+.containerTrack .containerTrackText {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.containerTrack .containerTrackText .textDescription {
+  max-width: 60%;
+}
+.containerTrack .containerTrackCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+.containerTrack .containerTrackCards .trackCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: 15px 15px;
+  background-color: #343434;
+  border-radius: 18px;
+  padding: 25px;
+}
+.containerTrack .containerTrackCards .trackCard .cardInfos {
+  color: #F8F8F8;
+}
+.containerTrack .containerTrackCards .trackCard .cardInfos .btnMaps {
+  text-decoration: none;
+  color: #F8F8F8;
+  background-color: #BF0606;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-weight: 300;
+}
+.containerTrack .containerTrackCards .trackCard .cardInfos h3 {
+  margin: 15px 0px;
+}
+.containerTrack .containerTrackCards .trackCard .cardInfos span {
+  font-weight: 300;
+}
+.containerTrack .containerTrackCards .trackCard .cardInfos .btnAction {
+  display: flex;
+  margin-top: 10px;
+}
+.containerTrack .containerTrackCards .trackCard .cardInfos .btnAction a {
+  text-decoration: none;
+  color: #F8F8F8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  padding: 4px;
+  background-color: #BF0606;
+  border-radius: 8px;
+}
+
 main {
   display: block;
 }/*# sourceMappingURL=style.css.map */

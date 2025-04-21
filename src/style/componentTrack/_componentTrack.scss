@@ -1,0 +1,76 @@
+.containerTrack{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
+
+    .containerTrackText{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .textDescription{
+            max-width: 60%;
+        }
+    }
+
+    .containerTrackCards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+
+        .trackCard{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 500px;
+            margin: 15px 15px;
+            background-color: $black-color;
+            border-radius: $border-radius-section;
+            padding: 25px;
+
+            .cardInfos{
+                color: $withe-color;
+
+                .btnMaps{
+                    text-decoration: none;
+                    color: $withe-color;
+                    background-color: $red-color;
+                    padding: 3px 8px;
+                    border-radius: $border-radius-button;
+                    font-weight: $font-light;
+                }
+
+                h3{
+                    margin: 15px 0px;
+                }
+
+                span{
+                    font-weight: $font-light;
+                }
+
+                .btnAction{
+                    display: flex;
+                    margin-top: 10px;
+                    a{
+                        text-decoration: none;
+                        color: $withe-color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 200px;
+                        padding: 4px;
+                        background-color: $red-color;
+                        border-radius: $border-radius-button;
+                        
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
