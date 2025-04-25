@@ -489,6 +489,28 @@ header .containerHeader nav ul li .selectedHeader {
   border-radius: 8px;
 }
 
+.containerDepoiment {
+  display: flex;
+  flex-direction: column;
+  margin-top: 250px;
+  border: 1px solid red;
+}
+.containerDepoiment .containerDepoimentText {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0px 135px;
+}
+.containerDepoiment .containerDepoimentText .textTitle {
+  max-width: 50%;
+}
+.containerDepoiment .containerDepoimentText .textDescription {
+  max-width: 50%;
+}
+.containerDepoiment .containerDepoimentUser {
+  margin-top: 100px;
+}
+
 main {
   display: block;
 }/*# sourceMappingURL=style.css.map */
