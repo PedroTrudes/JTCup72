@@ -1,0 +1,30 @@
+.containerDepoiment{
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    border: 1px solid red;
+
+    .depoimentText{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0px 135px;
+        
+        .containerDepoimentText{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            .textTitle{
+                max-width: 50%;
+            }
+            .textDescription{
+                max-width: 50%;
+            }
+        }
+
+        .containerDepoimentUser{
+            border: 1px solid red
+        }
+    }
+    
+}

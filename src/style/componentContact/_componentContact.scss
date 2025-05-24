@@ -1,0 +1,57 @@
+.containerContact{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact{
+        display: flex;
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+
+        .containerContactText{
+            width: 40%;
+            .buttonParticipate{
+                padding: 8px 24px;
+                background-color: $red-color;
+                width: 80%;
+                margin-top: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 8px;
+                text-decoration: none;
+                font-family: $font-styles;
+                color: $withe-color;
+                font-weight: $font-bold;
+                font-size: 24px;
+            }
+        }
+
+        .containerContactImage{
+            position: relative;
+
+            span{
+                position: absolute;
+                padding: 8px 44px;
+                border-radius: 8px;
+                background: #ffffff8f;
+                backdrop-filter: blur(5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            }
+            .imageSpan01{
+                margin-left: -41px;
+                top: -40px;
+            }
+            .imageSpan02{
+                margin-left: -61px;
+                top: 10px;
+            }
+            .imageSpan03{
+                margin-left: -81px;
+                top: 60px;
+            }
+        }
+    }
+}
