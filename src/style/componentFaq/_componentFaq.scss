@@ -1,0 +1,91 @@
+.containerFaq{
+    margin-top: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .textLink{
+        color: $red-color;
+        font-weight: $font-light;
+        font-style: italic;
+        text-decoration: none;
+    }
+
+    .containerButtonFaq{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+        width: 35%;
+
+        button{
+            background-color: #fff;
+            width: 190px;
+            height: 45px;
+            border-radius: $border-radius-section;
+            border: 1px solid $red-color;
+            font-size: 20px;
+            font-weight: $font-regular;
+            color: $red-color;
+        }
+        .isActiveFaq{
+            background-color: $red-color;
+            color: $withe-color;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+        }
+
+    }
+
+    .containerFaqText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerFaqs{
+        margin-top: 85px;
+        //border: 1px solid green;
+        width: 80%;
+    
+        .faqsCard{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0px;
+            width: 100%;
+            //border: 1px solid red;
+    
+            .cardIconCategory{
+                margin: 5px 25px;
+                //border: 1px solid blue;
+            }
+            .cardIconArrow{
+                margin: 5px 25px;
+                .isArrowUp{
+                    transform: rotate(180deg);
+                }
+            }
+            .cardTextTitle{
+                //border: 1px solid red;
+                width: 100%;
+                .cardTextSpan{
+                    display: none;
+                }
+                .cardTextSpanActive{
+                    display: block!important;
+                }
+            }
+        }
+    }
+
+}
+
+
+    .faqPayment{
+        display: none;
+    }
+    .faqAwards{
+        display: none;
+    }

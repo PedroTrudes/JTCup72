@@ -7,11 +7,12 @@
     .contact{
         display: flex;
         width: 75%;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
         .containerContactText{
-            width: 40%;
+            
+            width: 50%;
             .buttonParticipate{
                 padding: 8px 24px;
                 background-color: $red-color;
@@ -31,6 +32,7 @@
 
         .containerContactImage{
             position: relative;
+            margin-right: 122px;
 
             span{
                 position: absolute;
