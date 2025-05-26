@@ -523,13 +523,13 @@
           </p>
         </div>
         <div class="containerButtonFaq">
-          <button class="isActiveFaq">Veiculos</button>
-          <button>Pagamento</button>
-          <button>Premios</button>
+          <button class="isActiveFaq" onclick="activeFaq('vehicle')">Veiculos</button>
+          <button onclick="activeFaq('payment')">Pagamento</button>
+          <button onclick="activeFaq('awards')">Premios</button>
         </div>
         <div class="containerFaqs">
 
-          <div class="faqVehicle isActiveFaq">
+          <div class="faqVehicle isActiveFaqContainer">
             <div class="faqsCard">
               <div class="cardIconCategory">
                 <img src="src/assets/icons/categoryVehivle.png" alt="" />
@@ -665,7 +665,7 @@
                 <img src="src/assets/icons/categoryVehivle.png" alt="" />
               </div>
               <div class="cardTextTitle">
-                <h3>Não tenho moto, consigo participar?</h3>
+                <h3>Chamando faq Payment</h3>
                 <div class="cardTextSpan">
                   <span>
                     Temos diversas motos preparadas para as nossas categorias e
@@ -704,7 +704,7 @@
                 <img src="src/assets/icons/categoryVehivle.png" alt="" />
               </div>
               <div class="cardTextTitle">
-                <h3>Não tenho moto, consigo participar?</h3>
+                <h3>Chamando faq Awards</h3>
                 <div class="cardTextSpan">
                   <span>
                     Temos diversas motos preparadas para as nossas categorias e
@@ -736,11 +736,12 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </section>
     </main>
+
+    <script src="src/js/activeFaq.js"></script>
+    <script src="src/js/carrosselDepoiment.js"></script>
     <!--
         <script src="src/js/animationLoad.js"></script>
     -->

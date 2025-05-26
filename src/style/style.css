@@ -665,6 +665,9 @@ header .containerHeader nav ul li .selectedHeader {
   margin-top: 85px;
   width: 80%;
 }
+.containerFaq .containerFaqs .isActiveFaqContainer {
+  display: block !important;
+}
 .containerFaq .containerFaqs .faqsCard {
   display: flex;
   align-items: center;
@@ -689,6 +692,10 @@ header .containerHeader nav ul li .selectedHeader {
 }
 .containerFaq .containerFaqs .faqsCard .cardTextTitle .cardTextSpanActive {
   display: block !important;
+}
+
+.faqVehicle {
+  display: none;
 }
 
 .faqPayment {
