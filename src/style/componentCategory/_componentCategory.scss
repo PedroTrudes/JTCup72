@@ -41,9 +41,11 @@
                 }
             }
             .isActive{
+                transition: all 0.5s ease-in-out;
                 background-color: $red-color!important;
             }
         }
+
 
         .categoryDivider{
             height: 300px;
@@ -57,6 +59,7 @@
             .categoryText{
                 display: none;
                 max-width: 80%;
+                
                 .buttonParticipate{
                     display: flex;
                     align-items: center;
@@ -74,8 +77,6 @@
                         transition: transform 0.3s ease-in-out;
                         &:hover{
                             transform: rotate(45deg);
-
-                            //display: none;
                         }
 
                     }
@@ -83,6 +84,7 @@
             }
             .isActive{
                 display: block!important;
+                transition: all 2s ease-in-out;
             }
         }
 

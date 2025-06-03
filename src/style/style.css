@@ -385,6 +385,7 @@ header .containerHeader nav ul li .selectedHeader {
   cursor: pointer;
 }
 .containerCategory .containerCategoryApresentation .categoryBotton .isActive {
+  transition: all 0.5s ease-in-out;
   background-color: #BF0606 !important;
 }
 .containerCategory .containerCategoryApresentation .categoryDivider {
@@ -421,6 +422,7 @@ header .containerHeader nav ul li .selectedHeader {
 }
 .containerCategory .containerCategoryApresentation .categoryDescription .isActive {
   display: block !important;
+  transition: all 2s ease-in-out;
 }
 
 .containerTrack {
