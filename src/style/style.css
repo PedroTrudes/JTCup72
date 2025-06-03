@@ -269,11 +269,13 @@ header .containerHeader nav ul li .selectedHeader {
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 100px;
 }
 .containerNumbers .numbers .numbersSpecs .valueSpec {
   font-size: 2.5em;
   color: #BF0606;
   font-weight: 400;
+  transition: all 0.3 ease-in-out;
 }
 .containerNumbers .numbers .numbersSpecs .titleSpec {
   font-size: 1em;

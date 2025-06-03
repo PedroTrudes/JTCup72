@@ -14,11 +14,13 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            width: 100px;
 
             .valueSpec{
                 font-size: 2.5em;
                 color: $red-color;
                 font-weight: $font-regular;
+                transition: all 0.3 ease-in-out;
             }
 
             .titleSpec{
