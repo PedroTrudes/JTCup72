@@ -1,10 +1,10 @@
 const btnFaqs = document.querySelectorAll('button');
-console.log(btnFaqs);
 const contianerFaqPayment = document.querySelector('.faqPayment');
 const containerFaqVehicle = document.querySelector('.faqVehicle');
 const containerFaqAwards = document.querySelector('.faqAwards');
 const faqsCards = document.querySelectorAll('.faqsCard');
-console.log(faqsCards);
+
+
 
 function activeFaq(idFaq) {
     console.log("chamando" , idFaq);
@@ -40,3 +40,21 @@ function activeFaq(idFaq) {
         btnFaqs.item(0).classList.remove('isActiveFaq');
     }
 }
+
+faqsCards.forEach(faq => {
+  faq.addEventListener("click", function () {
+    const currentSpan = this.querySelector(".cardTextSpan");
+    const currentArrow = this.querySelector(".cardIconArrow img");
+    const isActive = currentSpan?.classList.contains("cardTextSpanActive");
+
+    faqsCards.forEach(f => {
+      f.querySelector(".cardTextSpan")?.classList.remove("cardTextSpanActive");
+      f.querySelector(".cardIconArrow img")?.classList.remove("isArrowUp");
+    });
+
+    if (!isActive) {
+      currentSpan?.classList.add("cardTextSpanActive");
+      currentArrow?.classList.add("isArrowUp");
+    }
+  });
+});

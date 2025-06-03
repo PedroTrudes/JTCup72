@@ -681,6 +681,10 @@ header .containerHeader nav ul li .selectedHeader {
 .containerFaq .containerFaqs .faqsCard .cardIconArrow {
   margin: 5px 25px;
 }
+.containerFaq .containerFaqs .faqsCard .cardIconArrow img {
+  transition: transform 0.9s ease-in-out;
+  transform-origin: center;
+}
 .containerFaq .containerFaqs .faqsCard .cardIconArrow .isArrowUp {
   transform: rotate(180deg);
 }
@@ -688,10 +692,16 @@ header .containerHeader nav ul li .selectedHeader {
   width: 100%;
 }
 .containerFaq .containerFaqs .faqsCard .cardTextTitle .cardTextSpan {
-  display: none;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.9s ease, opacity 0.9s ease, padding 0.7s ease;
+  padding-top: 0;
 }
 .containerFaq .containerFaqs .faqsCard .cardTextTitle .cardTextSpanActive {
-  display: block !important;
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 10px;
 }
 
 .faqVehicle {

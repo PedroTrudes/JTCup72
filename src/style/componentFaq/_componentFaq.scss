@@ -66,6 +66,9 @@
             }
             .cardIconArrow{
                 margin: 5px 25px;
+                img{
+                    transition: transform 0.9s ease-in-out;     transform-origin: center;  
+                }
                 .isArrowUp{
                     transform: rotate(180deg);
                 }
@@ -74,10 +77,16 @@
                 //border: 1px solid red;
                 width: 100%;
                 .cardTextSpan{
-                    display: none;
+                    max-height: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    transition: max-height 0.9s ease, opacity 0.9s ease, padding 0.7s ease;
+                    padding-top: 0;
                 }
                 .cardTextSpanActive{
-                    display: block!important;
+                    max-height: 500px;
+                    opacity: 1;
+                    padding-top: 10px;
                 }
             }
         }
