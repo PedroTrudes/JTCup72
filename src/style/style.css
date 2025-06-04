@@ -524,6 +524,7 @@ header .containerHeader nav ul li .selectedHeader {
   justify-content: center;
 }
 .containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .usersInfos {
+  opacity: 0;
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -549,36 +550,24 @@ header .containerHeader nav ul li .selectedHeader {
 }
 .containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .infoActive {
   display: block !important;
+  opacity: 0;
+  animation: fadeIn 0.9s ease-in-out forwards;
 }
 .containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .userInfosText {
   font-weight: 300;
   font-size: 16px;
 }
 
-/*
-
-
-.usersInfos {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-.usersInfos.infoActive {
-  display: block;
-  opacity: 1;
-}
-
-.carrosselPersona img {
-  opacity: 0.5;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.carrosselPersona img.activeCardPersona {
-  opacity: 1;
-  transform: scale(2.05);
-}
-*/
 .containerDepoimentUser {
   margin-top: 100px;
 }
@@ -593,6 +582,8 @@ header .containerHeader nav ul li .selectedHeader {
   align-items: end;
   justify-content: center;
   transition: transform 0.5s ease;
+  width: -moz-max-content;
+  width: max-content;
 }
 .containerCarrosselPersona .carrosselPersona img {
   height: 430px;

@@ -1,14 +1,9 @@
 .containerDepoimentUser{
-    
         margin-top: 100px;
         //position: relative;
-
-        
-            
-
 }
 
-.containerCarrosselPersona{
+    	.containerCarrosselPersona{
             width: 100%;
             overflow: hidden;
             position: relative;
@@ -17,6 +12,8 @@
                 align-items: end;
                 justify-content: center;
                 transition: transform 0.5s ease;
+                width: max-content;
+                //transform: translateX(550px);
                 img{
                     height: 430px;
                     flex-shrink: 0;
