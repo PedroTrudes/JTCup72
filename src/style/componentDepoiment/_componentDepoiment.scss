@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 250px;
-    border: 1px solid red;
 
     .depoimentText{
         display: flex;
@@ -23,8 +22,76 @@
         }
 
         .containerDepoimentUser{
-            border: 1px solid red
+            margin-bottom: 185px;
+
+            .depoimentUsers{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .usersInfos{
+                    display: none;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $withe-color;
+                    padding: 25px 32px;
+                    max-width: 60%;
+                    border-radius: $border-radius-section;
+                    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+
+                    .userInfosHeader{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 15px;
+                        
+                        .userName{
+                            font-weight: $font-bold;
+                            font-size: 20px;
+                        }
+                        .userAge{
+                            font-weight: $font-light;
+                            font-size: 16px;
+                        }
+                    }
+
+                }
+                .infoActive{
+                    display: block!important;
+                }
+
+                .userInfosText{
+                    font-weight: $font-light;
+                    font-size: 16px;
+                }
+            }
         }
     }
     
 }
+
+/*
+
+
+.usersInfos {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.usersInfos.infoActive {
+  display: block;
+  opacity: 1;
+}
+
+.carrosselPersona img {
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.carrosselPersona img.activeCardPersona {
+  opacity: 1;
+  transform: scale(2.05);
+}
+*/

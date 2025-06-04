@@ -1,37 +1,45 @@
 .containerDepoimentUser{
     
         margin-top: 100px;
-        position: relative;
+        //position: relative;
 
-        .containerCarrosselPersona{
-            overflow: hidden;
+        
+            
+
+}
+
+.containerCarrosselPersona{
             width: 100%;
+            overflow: hidden;
+            position: relative;
             .carrosselPersona{
                 display: flex;
-                justify-content: center;
                 align-items: end;
+                justify-content: center;
+                transition: transform 0.5s ease;
                 img{
-                    height: 330px;
+                    height: 430px;
+                    flex-shrink: 0;
                 }
                 .activeCardPersona{
                     height: 470px!important;
                 }
             }
-        }
-            
         .containerArrowCarrossel{
             position: absolute;
+            z-index: 1;
+            top: 250px;
             width: 100%;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            top: -80px;
+            
             padding: 0px 265px;
 
         }
-        
+            
+        }
+
         .indicatorCarrossel{
-            border: 1px solid red;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,4 +59,3 @@
                 background-color: $red-color;
             }
         }
-}
