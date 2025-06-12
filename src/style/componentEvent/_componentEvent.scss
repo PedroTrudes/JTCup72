@@ -1,0 +1,56 @@
+.containerEvent{
+    margin-top: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .containerDate{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        .months{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 80%;
+
+            .month{
+                font-size: 1.8em;
+                font-weight: $font-light;
+                color: $gray-color;
+                cursor: pointer;
+                transition: all 0.3s ease-in;
+            }
+
+            .month:hover{
+                font-weight: $font-bold;
+            
+            }
+
+            .monthSelect{
+                color: $red-color;
+                font-weight: $font-regular;
+            }
+        }
+    }
+
+    .containerEventByMonth{
+        border: 1px solid red;
+        width: 80%;
+        margin-top: 20px;
+        .envetList{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid pink;
+            list-style: none;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+    }
+
+}

@@ -773,6 +773,55 @@ header .containerHeader nav ul li .selectedHeader {
   display: none;
 }
 
+.containerEvent {
+  margin-top: 225px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.containerEvent .containerDate {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.containerEvent .containerDate .months {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+}
+.containerEvent .containerDate .months .month {
+  font-size: 1.8em;
+  font-weight: 300;
+  color: #ADADAD;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.containerEvent .containerDate .months .month:hover {
+  font-weight: 700;
+}
+.containerEvent .containerDate .months .monthSelect {
+  color: #BF0606;
+  font-weight: 400;
+}
+.containerEvent .containerEventByMonth {
+  border: 1px solid red;
+  width: 80%;
+  margin-top: 20px;
+}
+.containerEvent .containerEventByMonth .envetList {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid pink;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 main {
   display: block;
 }/*# sourceMappingURL=style.css.map */
