@@ -496,131 +496,142 @@ header .containerHeader nav ul li .selectedHeader {
 .containerDepoiment {
   display: flex;
   flex-direction: column;
-  margin-top: 250px;
+  align-items: center;
+  margin-top: 245px;
 }
-.containerDepoiment .depoimentText {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding: 0px 135px;
-}
-.containerDepoiment .depoimentText .containerDepoimentText {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-.containerDepoiment .depoimentText .containerDepoimentText .textTitle {
-  max-width: 50%;
-}
-.containerDepoiment .depoimentText .containerDepoimentText .textDescription {
-  max-width: 50%;
-}
-.containerDepoiment .depoimentText .containerDepoimentUser {
-  margin-bottom: 185px;
-}
-.containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers {
+.containerDepoiment .containerDepoimentText {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .usersInfos {
-  opacity: 0;
-  display: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #F8F8F8;
-  padding: 25px 32px;
-  max-width: 60%;
-  border-radius: 18px;
-  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
-.containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .usersInfos .userInfosHeader {
+.containerDepoiment .containerDepoimentText .textTitle {
+  max-width: 40%;
+}
+.containerDepoiment .containerDepoimentText .textDescription {
+  max-width: 40%;
+}
+.containerDepoiment .containerUserDepoiment {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  margin-top: 115px;
+  overflow-x: hidden;
+  width: 80%;
 }
-.containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .usersInfos .userInfosHeader .userName {
-  font-weight: 700;
-  font-size: 20px;
-}
-.containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .usersInfos .userInfosHeader .userAge {
-  font-weight: 300;
-  font-size: 16px;
-}
-.containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .infoActive {
-  display: block !important;
-  opacity: 0;
-  animation: fadeIn 0.9s ease-in-out forwards;
-}
-.containerDepoiment .depoimentText .containerDepoimentUser .depoimentUsers .userInfosText {
-  font-weight: 300;
-  font-size: 16px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.containerDepoimentUser {
-  margin-top: 100px;
-}
-
-.containerCarrosselPersona {
-  width: 100%;
-  overflow: hidden;
+.containerDepoiment .containerUserDepoiment .depoimentCard {
   position: relative;
 }
-.containerCarrosselPersona .carrosselPersona {
-  display: flex;
-  align-items: end;
-  justify-content: center;
-  transition: transform 0.5s ease;
-  width: -moz-max-content;
-  width: max-content;
-}
-.containerCarrosselPersona .carrosselPersona img {
-  height: 430px;
-  flex-shrink: 0;
-}
-.containerCarrosselPersona .carrosselPersona .activeCardPersona {
-  height: 470px !important;
-}
-.containerCarrosselPersona .containerArrowCarrossel {
+.containerDepoiment .containerUserDepoiment .depoimentCard .cardText {
+  background-color: rgba(255, 255, 255, 0.8705882353);
+  height: 40%;
+  width: 100%;
+  padding: 15px;
+  bottom: 0px;
   position: absolute;
-  z-index: 1;
-  top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  opacity: 1;
+}
+.containerDepoiment .containerUserDepoiment .depoimentCard .cardText .textApresentation {
+  color: #BF0606;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 0px 265px;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
 }
-
-.indicatorCarrossel {
+.containerDepoiment .containerUserDepoiment .depoimentCard .cardText .textApresentation .textApresentationName {
+  font-weight: 700;
+}
+.containerDepoiment .containerArrowCarrossel {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.containerDepoiment .containerArrowCarrossel .indicatorCarrossel {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 35px 0px;
 }
-.indicatorCarrossel .indicator {
+.containerDepoiment .containerArrowCarrossel .indicatorCarrossel .indicator {
   height: 8px;
   width: 8px;
   margin: 2px;
   border-radius: 8px;
   background-color: #343434;
 }
-.indicatorCarrossel .indicatorActive {
+.containerDepoiment .containerArrowCarrossel .indicatorCarrossel .indicatorActive {
   height: 8px;
   width: 13px;
   background-color: #BF0606;
 }
 
+/* 
+
+.containerDepoimentUser{
+        margin-top: 100px;
+        //position: relative;
+}
+
+    	.containerCarrosselPersona{
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            .carrosselPersona{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                transition: transform 0.5s ease;
+                width: max-content;
+                //transform: translateX(550px);
+                img{
+                    height: 430px;
+                    flex-shrink: 0;
+                }
+                .activeCardPersona{
+                    height: 470px!important;
+                }
+            }
+        .containerArrowCarrossel{
+            position: absolute;
+            z-index: 1;
+            top: 250px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            padding: 0px 265px;
+
+        }
+
+        }
+
+        .indicatorCarrossel{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 35px 0px;
+
+            .indicator{
+                height: 8px;
+                width: 8px;
+                margin: 2px;
+                border-radius: 8px;
+                background-color: $black-color;
+            }
+
+            .indicatorActive{
+                height: 8px;
+                width: 13px;
+                background-color: $red-color;
+            }
+        }
+*/
 .containerContact {
   margin-top: 180px;
   display: flex;
@@ -806,20 +817,54 @@ header .containerHeader nav ul li .selectedHeader {
 }
 .containerEvent .containerDate .months .monthSelect {
   color: #BF0606;
-  font-weight: 400;
+  font-weight: 700;
 }
 .containerEvent .containerEventByMonth {
-  border: 1px solid red;
   width: 80%;
   margin-top: 20px;
 }
 .containerEvent .containerEventByMonth .envetList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 18px;
+  justify-content: center;
+}
+.containerEvent .containerEventByMonth .envetList .eventCard {
   display: flex;
-  flex-direction: row;
-  border: 1px solid pink;
-  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 15px 22px;
+  min-width: 280px;
+  min-height: 200px;
+  border-radius: 8px;
+  color: #F8F8F8;
+  background-color: #343434;
+}
+.containerEvent .containerEventByMonth .envetList .eventCard .titleEvent {
+  margin-bottom: 8px;
+}
+.containerEvent .containerEventByMonth .envetList .eventCard .titleEvent h3 {
+  font-weight: 700;
+}
+.containerEvent .containerEventByMonth .envetList .eventCard .dateEvent span {
+  font-size: 300;
+}
+.containerEvent .containerEventByMonth .envetList .eventCard .localizationEvent .btnAction {
+  display: flex;
+  margin-top: 22px;
+}
+.containerEvent .containerEventByMonth .envetList .eventCard .localizationEvent .btnAction a {
+  text-decoration: none;
+  color: #F8F8F8;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  width: 200px;
+  padding: 4px;
+  background-color: #BF0606;
+  border-radius: 8px;
 }
 
 main {

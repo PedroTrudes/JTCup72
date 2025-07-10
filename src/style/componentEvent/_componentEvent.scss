@@ -33,22 +33,75 @@
 
             .monthSelect{
                 color: $red-color;
-                font-weight: $font-regular;
+                font-weight: $font-bold;
             }
         }
     }
 
     .containerEventByMonth{
-        border: 1px solid red;
         width: 80%;
         margin-top: 20px;
         .envetList{
-            display: flex;
-            flex-direction: row;
-            border: 1px solid pink;
-            list-style: none;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+            gap: 18px;
+            justify-content: center;
+            
+            //display: flex;
+            //flex-direction: row;
+            //list-style: none;
+            //align-items: center;
+            //justify-content: flex-start;
+            //flex-wrap: wrap;
+            //gap: 36px;
+            
+            .eventCard{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                margin: 5px;
+                padding: 15px 22px;
+                min-width: 280px;
+                min-height: 200px;    
+                
+                border-radius: $border-radius-button;
+
+                color: $withe-color;
+                background-color: $black-color;
+
+                .titleEvent{
+                    margin-bottom: 8px;
+                    h3{
+                        font-weight: $font-bold;
+                    }
+                }
+                .dateEvent{
+                    span{
+                        font-size: $font-light;
+                    }
+                }
+                .localizationEvent{
+                    .btnAction{
+                        display: flex;
+                        margin-top: 22px;
+                        a{
+                            text-decoration: none;
+                            color: $withe-color;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            width: 200px;
+                            padding: 4px;
+                            background-color: $red-color;
+                            border-radius: $border-radius-button;
+                            
+                            
+                        }
+                    }
+                }
+            }
         }
 
     }

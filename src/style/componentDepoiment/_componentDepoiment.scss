@@ -1,87 +1,91 @@
 .containerDepoiment{
     display: flex;
     flex-direction: column;
-    margin-top: 250px;
-
-    .depoimentText{
+    align-items: center;
+    margin-top: 245px;
+    .containerDepoimentText{
+        text-align: center;
         display: flex;
-        flex-direction: row;
-        width: 100%;
-        padding: 0px 135px;
-        
-        .containerDepoimentText{
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            .textTitle{
-                max-width: 50%;
-            }
-            .textDescription{
-                max-width: 50%;
-            }
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .textTitle{
+            max-width: 40%;
         }
+        .textDescription{
+            max-width: 40%;
+        }
+    }
 
-        .containerDepoimentUser{
-            margin-bottom: 185px;
+    .containerUserDepoiment{
+        display: flex;
+        margin-top: 115px;
+        overflow-x: hidden;
+        width: 80%;
+        
+        .depoimentCard{
+            position: relative;
 
-            .depoimentUsers{
+            .cardText{
+                background-color: #ffffffde;
+                height: 40%;
+                width: 100%;
+                padding: 15px;
+                bottom: 0px;
+                
+                position: absolute;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                
+                opacity: 1;
 
-                .usersInfos{
-                    opacity: 0;
-                    display: none;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: $withe-color;
-                    padding: 25px 32px;
-                    max-width: 60%;
-                    border-radius: $border-radius-section;
-                    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                .textApresentation{
+                    color: $red-color;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin-bottom: 10px;
 
-
-                    .userInfosHeader{
-                        display: flex;
-                        justify-content: space-between;
-                        margin-bottom: 15px;
-                        
-                        .userName{
-                            font-weight: $font-bold;
-                            font-size: 20px;
-                        }
-                        .userAge{
-                            font-weight: $font-light;
-                            font-size: 16px;
-                        }
+                    .textApresentationName{
+                        font-weight: $font-bold;
                     }
-
-                }
-                .infoActive{
-                    display: block!important;
-                    opacity: 0;
-                     animation: fadeIn 0.9s ease-in-out forwards;
-                }
-
-                .userInfosText{
-                    font-weight: $font-light;
-                    font-size: 16px;
                 }
             }
+        }
+    }
+
+    .containerArrowCarrossel{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    .indicatorCarrossel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 35px 0px;
+            
+        .indicator{
+            height: 8px;
+            width: 8px;
+            margin: 2px;
+            border-radius: 8px;
+            background-color: $black-color;
+        }
+            
+        .indicatorActive{
+            height: 8px;
+            width: 13px;
+            background-color: $red-color;
         }
     }
     
 }
 
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
