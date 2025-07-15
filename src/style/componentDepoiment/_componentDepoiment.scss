@@ -20,12 +20,15 @@
 
     .containerUserDepoiment{
         display: flex;
+        align-items: center;
+        justify-content: center;
         margin-top: 115px;
-        overflow-x: hidden;
         width: 80%;
+
         
         .depoimentCard{
             position: relative;
+            margin: 0px 15px;;
 
             .cardText{
                 background-color: #ffffffde;
@@ -60,7 +63,7 @@
     }
 
     .containerArrowCarrossel{
-        width: 80%;
+        width: 30%;
         display: flex;
         align-items: center;
         justify-content: space-around;

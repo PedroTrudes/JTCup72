@@ -1,193 +1,130 @@
-const users = [
-    {
-        userName: "Pedro",
+//:CHECK: Task 01: Fazer os indicators mudar junto com o Slide; 
+
+//:CHECK: Task 02: Vamos alinhar os depoimentos ao centro da tela;
+
+// Taks Plus: vamos tentar renderizar os indicator de acordo com a quantidade de objetos com OBJECT.Keys
+const arrayDepoiment = {
+    0: [
+            {
+        userName: "slide 0",
         userImage: "src/assets/persona/persona01.png",
         userAge: 25,
         userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
     },
     {
-        userName: "Andre",
+        userName: "slide 0",
         userImage: "src/assets/persona/persona02.png",
         userAge: 29,
         userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
     },
     {
-        userName: "Julio",
+        userName: "slide 0",
         userImage: "src/assets/persona/persona03.png",
         userAge: 18,
         userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
     },
+    ],
+    1: [
+            {
+        userName: "slide 1",
+        userImage: "src/assets/persona/persona03.png",
+        userAge: 25,
+        userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
+    },
     {
-        userName: "Carlos",
+        userName: "slide 1",
+        userImage: "src/assets/persona/persona01.png",
+        userAge: 29,
+        userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
+    },
+    {
+        userName: "slide 1",
+        userImage: "src/assets/persona/persona02.png",
+        userAge: 18,
+        userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
+    },
+    ],
+    2: [
+            {
+        userName: "slide 2",
         userImage: "src/assets/persona/persona04.png",
-        userAge: 12,
+        userAge: 25,
+        userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
+    },
+    {
+        userName: "slide 2",
+        userImage: "src/assets/persona/persona04.png",
+        userAge: 29,
+        userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
+    },
+    {
+        userName: "slide 2",
+        userImage: "src/assets/persona/persona04.png",
+        userAge: 18,
         userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
     },
 ]
-
-/*
+};
 
 const renderInDiv = document.querySelector(".containerUserDepoiment");
-
 const btnPrev = document.querySelector(".arrowLeft");
 const btnNext = document.querySelector(".arrowRigth");
-const indicatorsCarrossel = document.querySelector(".indicatorCarrossel");
+let indexCarrossel = 0;
 
-let currentIndex = 0;
-
-function createItensCarrossel() {
-    users.forEach((item, index) => {
-        const slide = document.createElement('div');
-        slide.innerHTML = `
-        <div class="depoimentCard">
-        <div class="cardImage">
-        <img src="${item.userImage}" alt="Persona">
-        </div>
-        <div class="cardText">
-        <div class="textApresentation">
-        <span class="textApresentationName">${item.userName}</span>
-        <span>${item.userAge} Anos</span>
-        </div>
-        <div class="textDepoiment">
-        <p>${item.userDepoiment}</p>
-        </div>
-        </div>
-        </div>
-        `;
-        renderInDiv.appendChild(slide);
-        
-        const indicator = document.createElement('button');
-        indicator.className = "indicator";
-        indicator.dataset.index = index;
-        indicator.addEventListener('click', () => goSlide(index));
-        indicatorsCarrossel.appendChild(indicator); 
-    });
-    
-    updateIndicators();
+function renderSlide(slideIndex){
+    const slide = arrayDepoiment[slideIndex];
+    const carrosselHTML = document.querySelector(".containerUserDepoiment");
+    if(slide){
+        carrosselHTML.innerHTML = slide.map(users => `
+            <div class="depoimentCard depoimentActived">
+            <div class="cardImage">
+              <img src="${users.userImage}" alt="Persona">
+            </div>
+            <div class="cardText">
+              <div class="textApresentation">
+                <span class="textApresentationName">${users.userName}</span>
+                <span>${users.userAge}</span>
+              </div>
+              <div class="textDepoiment">
+                <p>${users.userDepoiment}</p>
+              </div>
+            </div>
+          </div>
+            `).join("");
+    }
 }
 
-
-function updateSlide() {
-    const widthItem = renderInDiv.clientWidth;
-    renderInDiv.style.transform = `translateX(-${currentIndex * widthItem}px)`;
-    updateIndicators();
+function updateIndicator() {
+    const indicator = document.querySelectorAll(".indicator");
+    indicator.forEach((item, index) => {
+        item.classList.toggle("indicatorActive", index === indexCarrossel);
+    })
 }
-
-function updateIndicators(){
-    const indicators = document.querySelectorAll(".indicator");
-    indicators.forEach((indi, index) => {
-        indi.classList.toggle('indicatorActive', index === currentIndex);
-    });
-}
-
-function goToSlide(index){
-    currentIndex = index;
-    updateIndicators();
-}
-
-btnPrev.addEventListener('click', () => {
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : users.length - 1;
-    updateIndicators();
-})
 
 btnNext.addEventListener('click', () => {
-    currentIndex = (currentIndex < users.length - 1) ? currentIndex + 1 : 0;
-    updateIndicators();
+    indexCarrossel += 1;
+    if(arrayDepoiment[indexCarrossel]){
+        renderSlide(indexCarrossel);
+        slideIndicator = indexCarrossel;
+        updateIndicator()
+    }else if(indexCarrossel > 2){
+        indexCarrossel = 0;  
+        slideIndicator = indexCarrossel;
+        renderSlide(indexCarrossel);
+        updateIndicator()
+    }
 })
 
-
-createItensCarrossel();
-
-let interval = setInterval(() => {
-    currentIndex = (currentIndex < users.length - 1 )? currentIndex + 1 : 0;
-    updateSlide();
-    updateIndicators();
-}, 5000)
-
-renderInDiv.addEventListener('mouseenter', () => clearInterval(interval));
-renderInDiv.addEventListener('mouseleave', () => {
-    interval.setInterval(() => {
-        currentIndex = (currentIndex < users.length - 1 )? currentIndex + 1 : 0;
-        updateSlide();
-        updateIndicators();
-    }, 5000);
-});
-
-
-*/
-/* 
-
-renderInDiv.innerHTML = users.map(user => `
-<div class="depoimentCard">
-    <div class="cardImage">
-    <img src="${user.userImage}" alt="Persona">
-    </div>
-    <div class="cardText">
-    <div class="textApresentation">
-    <span class="textApresentationName">${user.userName}</span>
-    <span>${user.userAge} Anos</span>
-    </div>
-    <div class="textDepoiment">
-    <p>${user.userDepoiment}</p>
-    </div>
-    </div>
-    </div>
-    
-    `).join('');
-
-
-    Comentario de um futuro user data
-    {
-        userName: "Renato",
-        userImage: "src/assets/persona/persona05.png",
-        userAge: 45,
-        userDepoiment: "Participo da JTCup a mais de 2 Anos e amo a energia do grupo e dos porfissionais que estão por tras desse espetaculo."
-    },
-    */
-
-   /* 
-   const divPersonas = document.querySelector(".carrosselPersona");
-   const personasImg = document.querySelectorAll(".carrosselPersona img");
-   const personasText = document.querySelectorAll(".usersInfos");
-   const arrowPrev = document.querySelector(".arrowRigth");
-const arrowBack = document.querySelector(".arrowLeft");
-const indicators = document.querySelectorAll(".indicator")
-
-let index = 0;
-let left = 550;
-function updateCarrossel(newIndex, left) {
-    
-personasImg.forEach((persona, i) => {
-    persona.classList.toggle("activeCardPersona", i === newIndex);
-    divPersonas.style.transform = `translateX(${left}px)` ;
-})
-personasText.forEach((text, i) => {
-    text.classList.toggle("infoActive", i === newIndex);
-})
-indicators.forEach((indicator, i) => {
-    indicator.classList.toggle("indicatorActive", i === newIndex);
+btnPrev.addEventListener('click', () => {
+    indexCarrossel -= 1;
+    if(arrayDepoiment[indexCarrossel]){
+        renderSlide(indexCarrossel);
+        updateIndicator()
+    }else if(indexCarrossel < 0){
+        indexCarrossel = 2;
+        renderSlide(indexCarrossel);
+        updateIndicator()
+    }
 })
 
-index = newIndex;
-}
-
-arrowPrev.addEventListener("click", () => {
-    let prox = (index + 1);
-    left -= 200; 
-    if(prox < 5){
-        updateCarrossel(prox, left);
-    }else{
-        updateCarrossel(prox = 0, left = 550);
-}
-})
-
-arrowBack.addEventListener("click", () => {
-    let back = (index - 1);
-    left +=200;
-    if(back > -1){
-        updateCarrossel(back, left);
-    }else{
-        updateCarrossel(back = 4, left = 550);
-}
-})
-*/
+renderSlide(indexCarrossel);

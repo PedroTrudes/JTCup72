@@ -448,7 +448,7 @@ header .containerHeader nav ul li .selectedHeader {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 120px;
 }
 .containerTrack .containerTrackCards .trackCard {
   display: flex;
@@ -514,12 +514,14 @@ header .containerHeader nav ul li .selectedHeader {
 }
 .containerDepoiment .containerUserDepoiment {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 115px;
-  overflow-x: hidden;
   width: 80%;
 }
 .containerDepoiment .containerUserDepoiment .depoimentCard {
   position: relative;
+  margin: 0px 15px;
 }
 .containerDepoiment .containerUserDepoiment .depoimentCard .cardText {
   background-color: rgba(255, 255, 255, 0.8705882353);
@@ -547,7 +549,7 @@ header .containerHeader nav ul li .selectedHeader {
   font-weight: 700;
 }
 .containerDepoiment .containerArrowCarrossel {
-  width: 80%;
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: space-around;
