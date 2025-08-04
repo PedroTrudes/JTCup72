@@ -10,6 +10,7 @@
         font-weight: $font-light;
         font-style: italic;
         text-decoration: none;
+        text-decoration: underline;
     }
 
     .containerButtonFaq{
@@ -28,6 +29,8 @@
             font-size: 20px;
             font-weight: $font-regular;
             color: $red-color;
+            cursor: pointer;
+            transition: all 0.6s ease-in-out;
         }
         .isActiveFaq{
             background-color: $red-color;

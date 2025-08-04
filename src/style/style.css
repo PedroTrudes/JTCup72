@@ -142,6 +142,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serife;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -200,6 +201,12 @@ header .containerHeader nav ul li .selectedHeader {
         transform:translateY(0);
     }
 
+}
+*/
+/*
+main{
+    //opacity: 0;
+    //animation: slide-in-bottom 4s forwards;
 }
 */
 .containerVideo {
@@ -635,7 +642,7 @@ header .containerHeader nav ul li .selectedHeader {
         }
 */
 .containerContact {
-  margin-top: 180px;
+  padding-top: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -702,6 +709,7 @@ header .containerHeader nav ul li .selectedHeader {
   font-weight: 300;
   font-style: italic;
   text-decoration: none;
+  text-decoration: underline;
 }
 .containerFaq .containerButtonFaq {
   display: flex;
@@ -719,6 +727,8 @@ header .containerHeader nav ul li .selectedHeader {
   font-size: 20px;
   font-weight: 400;
   color: #BF0606;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
 }
 .containerFaq .containerButtonFaq .isActiveFaq {
   background-color: #BF0606;
@@ -787,7 +797,7 @@ header .containerHeader nav ul li .selectedHeader {
 }
 
 .containerEvent {
-  margin-top: 225px;
+  padding-top: 225px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -869,6 +879,12 @@ header .containerHeader nav ul li .selectedHeader {
   border-radius: 8px;
 }
 
-main {
-  display: block;
-}/*# sourceMappingURL=style.css.map */
+/*
+    main{
+        display: none;
+    }
+    header{
+        display: none;
+    }
+
+*//*# sourceMappingURL=style.css.map */

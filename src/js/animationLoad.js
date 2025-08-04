@@ -9,6 +9,10 @@ const containerAnimationFour = document.querySelector('.containerLoadFour');
 const containerWebHeader = document.querySelector(".header");
 const containerWebPage = document.querySelector(".main");
 const containerLoad = document.querySelector(".load");
+//preciso deixar o main e o header com display none para fazer funcionar load
+
+containerWebHeader.style.display = "none";
+containerWebPage.style.display = "none";
 
 setTimeout(() => {
     containerAnimationOne.style.display = "none";
@@ -29,7 +33,7 @@ setTimeout(() => {
 setTimeout(() => {
     containerLoad.style.display = "none"; 
     containerWebHeader.style.display = "flex";
-    containerWebPage.style.display = "flex";
+    containerWebPage.style.display = "block";
 }, 18000)
 
 
