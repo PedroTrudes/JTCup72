@@ -222,7 +222,7 @@ main{
   overflow: hidden;
 }
 .containerVideo img {
-  height: 9vw;
+  opacity: 0;
 }
 .containerVideo video {
   position: absolute;
