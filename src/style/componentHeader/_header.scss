@@ -35,6 +35,7 @@ header{
                         font-weight: $font-light;
                     }
                     .selectedHeader{
+                        transition: all ease-in-out 0.5s;
                         color: $red-color;
                         font-weight: $font-bold;
 
@@ -45,15 +46,3 @@ header{
     }
     
 }
-
-/*
-@keyframes slide-in-bottom-header{
-    0%{
-        transform:translateY(1000px);
-    }
-    100%{
-        transform:translateY(0);
-    }
-
-}
-*/

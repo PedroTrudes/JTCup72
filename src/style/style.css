@@ -191,21 +191,11 @@ header .containerHeader nav ul li a {
   font-weight: 300;
 }
 header .containerHeader nav ul li .selectedHeader {
+  transition: all ease-in-out 0.5s;
   color: #BF0606;
   font-weight: 700;
 }
 
-/*
-@keyframes slide-in-bottom-header{
-    0%{
-        transform:translateY(1000px);
-    }
-    100%{
-        transform:translateY(0);
-    }
-
-}
-*/
 /*
 main{
     //opacity: 0;
