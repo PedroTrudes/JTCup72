@@ -4,10 +4,8 @@ header{
     z-index: 5;
     width: 100%;
     display: flex;
-    //display: none;
     align-items: center;
     justify-content: center;
-    //animation: slide-in-bottom-header 6s;
 
     .containerHeader{
         width: 90%;
@@ -22,8 +20,7 @@ header{
             align-items: center;
             justify-content: space-between;
             img{
-                width: 55px;
-                opacity: 0;
+                width: 105px;
             }
             ul{
                 display: flex;
