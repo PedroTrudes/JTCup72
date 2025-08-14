@@ -6,3 +6,8 @@
     font-family: $font-styles;
     scroll-behavior: smooth;
 }
+
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

@@ -145,6 +145,10 @@
   scroll-behavior: smooth;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 header {
   position: fixed;
   top: 25px;
@@ -170,8 +174,7 @@ header .containerHeader nav {
   justify-content: space-between;
 }
 header .containerHeader nav img {
-  width: 55px;
-  opacity: 0;
+  width: 105px;
 }
 header .containerHeader nav ul {
   display: flex;
@@ -357,7 +360,7 @@ main{
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin-top: 250px;
+  padding-top: 250px;
 }
 .containerCategory .containerCategoryText {
   text-align: center;
