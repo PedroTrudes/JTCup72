@@ -335,6 +335,9 @@ main{
 .containerServices .containerServicesCards .card {
   max-width: 20%;
 }
+.containerServices .containerServicesCards .card img {
+  width: 250px;
+}
 .containerServices .containerServicesCards .card h3 {
   margin: 20px 0px;
   color: #BF0606;
