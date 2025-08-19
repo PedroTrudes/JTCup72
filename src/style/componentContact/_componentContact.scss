@@ -35,6 +35,8 @@
             margin-right: 122px;
 
             span{
+                animation: fadeIn 4s both;
+                animation-timeline: view();
                 position: absolute;
                 padding: 8px 44px;
                 border-radius: 8px;
@@ -56,4 +58,9 @@
             }
         }
     }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

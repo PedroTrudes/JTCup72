@@ -672,6 +672,8 @@ main{
   margin-right: 122px;
 }
 .containerContact .contact .containerContactImage span {
+  animation: fadeIn 4s both;
+  animation-timeline: view();
   position: absolute;
   padding: 8px 44px;
   border-radius: 8px;
@@ -693,6 +695,14 @@ main{
   top: 60px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .containerFaq {
   margin-top: 250px;
   display: flex;
