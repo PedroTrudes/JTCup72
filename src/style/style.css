@@ -751,6 +751,9 @@ main{
 .containerFaq .containerFaqs .faqsCard .cardIconCategory {
   margin: 5px 25px;
 }
+.containerFaq .containerFaqs .faqsCard .cardIconCategory img {
+  width: 42px;
+}
 .containerFaq .containerFaqs .faqsCard .cardIconArrow {
   margin: 5px 25px;
 }
