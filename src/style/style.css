@@ -751,6 +751,9 @@ main{
 .containerFaq .containerFaqs .faqsCard .cardIconCategory {
   margin: 5px 25px;
 }
+.containerFaq .containerFaqs .faqsCard .cardIconCategory img {
+  width: 42px;
+}
 .containerFaq .containerFaqs .faqsCard .cardIconArrow {
   margin: 5px 25px;
 }
@@ -870,4 +873,43 @@ main{
   padding: 4px;
   background-color: #BF0606;
   border-radius: 8px;
+}
+
+footer {
+  border-top: 0.1px solid #ADADAD;
+  padding: 45px 145px;
+}
+footer .containerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .containerFooter .containerFooterLogo img {
+  width: 150px;
+}
+footer .containerFooter .containerTextMotivation {
+  text-align: center;
+  font-weight: 700;
+  color: #BF0606;
+}
+footer .containerFooter .containerSocialLinks {
+  text-align: center;
+}
+footer .containerFooter .containerSocialLinks span {
+  padding-bottom: 50px;
+  color: #BF0606;
+}
+footer .containerFooter .containerSocialLinks ul {
+  display: flex;
+  margin-top: 5px;
+}
+footer .containerFooter .containerSocialLinks ul li {
+  list-style: none;
+  margin: 0px 12px;
+}
+footer .containerFooter .containerSocialLinks ul li a {
+  text-decoration: none;
+}
+footer .containerFooter .containerSocialLinks ul li a img {
+  width: 35px;
 }/*# sourceMappingURL=style.css.map */

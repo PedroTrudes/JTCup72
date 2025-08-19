@@ -1,0 +1,46 @@
+footer{
+    border-top: 0.1px solid $gray-color;
+    padding: 45px 145px;
+
+    .containerFooter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .containerFooterLogo{
+            img{
+                width: 150px;
+            }
+
+        }
+
+        .containerTextMotivation{
+            text-align: center;
+            font-weight: $font-bold;
+            color: $red-color;
+        }
+
+        .containerSocialLinks{
+            text-align: center;
+            span{
+                padding-bottom: 50px;
+                color: $red-color;
+            }
+            ul{
+                display: flex;
+                margin-top: 5px;
+                li{
+                    list-style: none;
+                    margin: 0px 12px;
+
+                    a{
+                        text-decoration: none;
+                        img{
+                            width: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
