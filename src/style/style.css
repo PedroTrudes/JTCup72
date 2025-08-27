@@ -158,6 +158,9 @@ header {
   align-items: center;
   justify-content: center;
 }
+header .containerHeaderMob {
+  display: none;
+}
 header .containerHeader {
   width: 90%;
   padding: 15px 25px;
@@ -196,6 +199,162 @@ header .containerHeader nav ul li .selectedHeader {
   font-weight: 700;
 }
 
+@media (max-width: 550px) {
+  header {
+    top: 0px;
+    width: 100vw;
+    z-index: 10px;
+  }
+  header .containerHeader {
+    display: none;
+  }
+  header .containerHeaderMob {
+    display: block;
+    background-color: #F8F8F8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  header .containerHeaderMob .imageLogo img {
+    width: 80px;
+  }
+  header .containerHeaderMob .menuHamburguer .menu #menuToggle {
+    display: none;
+  }
+  header .containerHeaderMob .menuHamburguer .menu .hamburguer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  header .containerHeaderMob .menuHamburguer .menu .hamburguer span {
+    width: 25px;
+    height: 4px;
+    background: #BF0606;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  header .containerHeaderMob .menuHamburguer .menu .navigationLink {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    max-width: 0px;
+    padding: 15px 0px;
+    width: 200px;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 0px 0px 0px 18px;
+    transition: max-width 1s ease-in-out;
+  }
+  header .containerHeaderMob .menuHamburguer .menu .navigationLink li {
+    padding: 5px 25px;
+  }
+  header .containerHeaderMob .menuHamburguer .menu .navigationLink li a {
+    text-decoration: none;
+    color: #343434;
+    font-weight: 700;
+  }
+  header .containerHeaderMob .menuHamburguer .menu .navigationLink li :hover {
+    color: #BF0606;
+  }
+  header .containerHeaderMob .menuHamburguer .menu .showMenu {
+    max-width: 300px;
+  }
+}
+/*
+@keyframes open-menu-keyframe{
+    from{
+        left: -50vw;
+    }
+    to{
+        left: 0vw;
+    }
+}
+
+    header{
+        position: fixed;
+        top: 0px;
+        background-color: $withe-color;
+        width: 100vw;
+        .containerHeader{
+            display: none;
+        }
+
+        .containerHeaderMob{
+            position: relative;
+            width: 100%;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 25px;
+            .menuHamburguer{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: auto;
+                .hamburguer01{
+                    width: 32px;
+                    height: 4px;
+                    //margin-top: 5px;
+                    border-radius: 19px 19px 0px 0px;
+                    background-color: $red-color;
+                }
+                .hamburguer02{
+                    width: 32px;
+                    height: 4px;
+                    margin-top: 5px;
+                    background-color: $red-color;
+                }
+                .hamburguer03{
+                    width: 32px;
+                    height: 4px;
+                    margin-top: 5px;
+                    border-radius: 0px 0px 19px 19px;
+                    background-color: $red-color;
+                }
+            }
+            .openMenu{
+                animation: open-menu-keyframe 2s ease-in-out;
+            }
+            .containerMenuMob{
+                position: absolute;
+                top: 60px;
+                width: 50vw;
+                height: 100vh;
+                left: -50vw;
+                padding: 15px 25px;
+                background-color: $withe-color;
+                ul{
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            margin-bottom: 35px;
+                            color: $red-color;
+                            font-weight: $font-regular;
+                            font-size: 1.4em;
+                        }
+                    }
+                }
+            }
+
+            .menuLogoMob{
+                margin-top: 12px;
+                img{
+                    width: 120px;
+                }
+            }
+        }
+    }
+    */
 /*
 main{
     //opacity: 0;
