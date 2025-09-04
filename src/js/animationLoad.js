@@ -8,11 +8,13 @@ const containerAnimationThree = document.querySelector('.containerLoadThree');
 const containerAnimationFour = document.querySelector('.containerLoadFour');
 const containerWebHeader = document.querySelector(".header");
 const containerWebPage = document.querySelector(".main");
+const containerFooterPage = document.querySelector(".footer");
 const containerLoad = document.querySelector(".load");
 //preciso deixar o main e o header com display none para fazer funcionar load
 
 containerWebHeader.style.display = "none";
 containerWebPage.style.display = "none";
+containerFooterPage.style.display = "none";
 
 setTimeout(() => {
     containerAnimationOne.style.display = "none";
@@ -42,11 +44,11 @@ textOne.forEach((text, i) => {
 })
 
 textTwo.forEach((text, i) => {
-    text.style.animationDelay = `${i * 0.08}s`;
+    text.style.animationDelay = `${i * 0.1}s`;
 })
 
 textThree.forEach((text, i) => {
-    text.style.animationDelay = `${i * 0.08}s`;
+    text.style.animationDelay = `${i * 0.1}s`;
 })
 
 textFour.forEach((text, i) => {
