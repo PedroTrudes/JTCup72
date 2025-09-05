@@ -160,7 +160,7 @@ header {
   top: 25px;
   z-index: 5;
   width: 100%;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -362,6 +362,7 @@ header .containerHeader nav ul li .selectedHeader {
     }
     */
 main {
+  display: none;
   animation: slide-in-bottom 4s forwards;
 }
 
@@ -1054,6 +1055,7 @@ main {
 footer {
   border-top: 0.1px solid #ADADAD;
   padding: 45px 145px;
+  display: none;
 }
 footer .containerFooter {
   display: flex;

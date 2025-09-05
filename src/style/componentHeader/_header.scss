@@ -3,7 +3,7 @@ header{
     top: 25px;
     z-index: 5;
     width: 100%;
-    display: flex;
+    display: none;//manter em none por conta da animacao em tela
     align-items: center;
     justify-content: center;
     .containerHeaderMob{
