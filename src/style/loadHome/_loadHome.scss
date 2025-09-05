@@ -1,6 +1,6 @@
 .load {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
     justify-content: center;
     height: 0vh;
     background-color: #fff;
-    width: 100%;
+    width: 100vw;
     animation: scaleBackgoundOne 3s forwards;
   }
   .containerLoadTwo {
@@ -61,19 +61,22 @@
   .textAnimationOne {
     opacity: 0;
     transform: translateY(100%);
-    animation: upText 0.2s forwards , showText 2s forwards;
+    animation: upText 0.2s forwards, showText 2s forwards 2s;
+    //animation: upText 0.2s forwards , showText 2s forwards;
   }
 
   .textAnimationTwo {
     opacity: 0;
     transform: translateY(100%);
-    animation: upText 0.2s forwards, showText 2s forwards;
+    animation: upText 0.2s forwards, showText 2s forwards 2s;
+    //animation: upText 0.2s forwards, showText 2s forwards;
   }
 
   .textAnimationThree {
     opacity: 0;
     transform: translateY(100%);
-    animation: upText 0.2s forwards, showText 2s forwards;
+    animation: upText 0.2s forwards, showText 2s forwards 2s;
+    //animation: upText 0.2s forwards, showText 2s forwards;
   }
 
   .textAnimationFour {
@@ -91,6 +94,7 @@
     margin: 0px 15px 0px 0px;
     border-radius: 18px;
     transform: translateY(100%);
+    
     animation: upText 0.4s forwards, showText 1s forwards 1s;
   }
 
@@ -131,26 +135,31 @@
 @keyframes scaleBackgoundOne {
   to {
     height: 25vh;
-    display: none;
+    opacity: 1;
+    visibility: hidden;
   }
 }
 
 @keyframes scaleBackgoundTwo {
   to {
     height: 50vh;
-    display: none;
+    opacity: 1;
+    visibility: hidden;
   }
 }
 @keyframes scaleBackgoundThree {
   to {
     height: 75vh;
-    display: none;
+    opacity: 1;
+    visibility: hidden;
   }
 }
 
 @keyframes scaleBackgoundFour {
   to {
     height: 100vh;
+    opacity: 1;
+    visibility: visible;
   }
 }
 
@@ -164,7 +173,9 @@
 @keyframes showText {
   to {
     opacity: 0;
-    //transform: translateY(-100%);
     visibility: hidden;
+    //opacity: 0;
+    //transform: translateY(-100%);
+    //visibility: hidden;
   }
 }

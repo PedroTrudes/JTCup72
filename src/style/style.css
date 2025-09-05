@@ -1,6 +1,6 @@
 .load {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +14,7 @@
   justify-content: center;
   height: 0vh;
   background-color: #fff;
-  width: 100%;
+  width: 100vw;
   animation: scaleBackgoundOne 3s forwards;
 }
 .load .containerLoadTwo {
@@ -58,17 +58,17 @@
 .load .textAnimationOne {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.2s forwards, showText 2s forwards;
+  animation: upText 0.2s forwards, showText 2s forwards 2s;
 }
 .load .textAnimationTwo {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.2s forwards, showText 2s forwards;
+  animation: upText 0.2s forwards, showText 2s forwards 2s;
 }
 .load .textAnimationThree {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.2s forwards, showText 2s forwards;
+  animation: upText 0.2s forwards, showText 2s forwards 2s;
 }
 .load .textAnimationFour {
   opacity: 0;
@@ -111,24 +111,29 @@
 @keyframes scaleBackgoundOne {
   to {
     height: 25vh;
-    display: none;
+    opacity: 1;
+    visibility: hidden;
   }
 }
 @keyframes scaleBackgoundTwo {
   to {
     height: 50vh;
-    display: none;
+    opacity: 1;
+    visibility: hidden;
   }
 }
 @keyframes scaleBackgoundThree {
   to {
     height: 75vh;
-    display: none;
+    opacity: 1;
+    visibility: hidden;
   }
 }
 @keyframes scaleBackgoundFour {
   to {
     height: 100vh;
+    opacity: 1;
+    visibility: visible;
   }
 }
 @keyframes upText {
@@ -153,6 +158,7 @@
 
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
+  box-sizing: border-box;
 }
 
 header {
