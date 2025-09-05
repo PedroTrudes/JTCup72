@@ -10,6 +10,8 @@ const containerWebHeader = document.querySelector(".header");
 const containerWebPage = document.querySelector(".main");
 const containerFooterPage = document.querySelector(".footer");
 const containerLoad = document.querySelector(".load");
+const containerLoadNumber = document.querySelectorAll(".loadNumber");
+console.log(containerLoadNumber)
 //preciso deixar o main e o header com display none para fazer funcionar load
 
 containerWebHeader.style.display = "none";
@@ -30,6 +32,7 @@ setTimeout(() => {
 setTimeout(() => {
     containerAnimationThree.style.display = "none";
     containerAnimationFour.style.display = "flex";
+    //containerLoadNumber[3].style.display = "none";
 }, 7500)
 
 setTimeout(() => {
