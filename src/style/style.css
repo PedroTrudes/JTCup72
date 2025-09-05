@@ -15,7 +15,7 @@
   height: 0vh;
   background-color: #fff;
   width: 100%;
-  animation: scaleBackgoundOne 5s forwards;
+  animation: scaleBackgoundOne 3s forwards;
 }
 .load .containerLoadTwo {
   display: none;
@@ -25,7 +25,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  animation: scaleBackgoundTwo 5s forwards;
+  animation: scaleBackgoundTwo 3s forwards;
 }
 .load .containerLoadThree {
   display: none;
@@ -35,7 +35,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  animation: scaleBackgoundThree 5s forwards;
+  animation: scaleBackgoundThree 3s forwards;
 }
 .load .containerLoadFour {
   display: none;
@@ -45,7 +45,7 @@
   background-color: #fff;
   align-items: center;
   justify-content: center;
-  animation: scaleBackgoundFour 5s forwards;
+  animation: scaleBackgoundFour 2.5s forwards;
 }
 .load .fontBold {
   font-weight: bold;
@@ -58,22 +58,22 @@
 .load .textAnimationOne {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.5s forwards 4s, showText 3.5s forwards 4.5s;
+  animation: upText 0.2s forwards, showText 2s forwards;
 }
 .load .textAnimationTwo {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.5s forwards, showText 3.5s forwards 4.5s;
+  animation: upText 0.2s forwards, showText 2s forwards;
 }
 .load .textAnimationThree {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.5s forwards, showText 3.5s forwards 4.5s;
+  animation: upText 0.2s forwards, showText 2s forwards;
 }
 .load .textAnimationFour {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.5s forwards;
+  animation: upText 0.2s forwards;
 }
 .load .loadNumber {
   text-align: center;
@@ -84,7 +84,7 @@
   margin: 0px 15px 0px 0px;
   border-radius: 18px;
   transform: translateY(100%);
-  animation: upText 0.5s forwards, showText 3.5s forwards 1.5s;
+  animation: upText 0.4s forwards, showText 1s forwards 1s;
 }
 .load .tagPiloto {
   padding-top: 60px;

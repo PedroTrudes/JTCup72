@@ -20,23 +20,23 @@ setTimeout(() => {
     containerAnimationOne.style.display = "none";
     containerAnimationTwo.style.display = "flex";
     
-}, 4500)
+}, 2500)
 
 setTimeout(() => {
     containerAnimationTwo.style.display = "none";
     containerAnimationThree.style.display = "flex";
-}, 9000)
+}, 5000)
 
 setTimeout(() => {
     containerAnimationThree.style.display = "none";
     containerAnimationFour.style.display = "flex";
-}, 13000)
+}, 7500)
 
 setTimeout(() => {
     containerLoad.style.display = "none"; 
     containerWebHeader.style.display = "flex";
     containerWebPage.style.display = "block";
-}, 18000)
+}, 10000)
 
 
 textOne.forEach((text, i) => {
