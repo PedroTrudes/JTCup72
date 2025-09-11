@@ -531,6 +531,19 @@ main {
   font-size: 1.2em;
 }
 
+@media (max-width: 750px) {
+  .containerAboutUs {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerAboutUs .containerAboutText {
+    width: 80%;
+  }
+  .containerAboutUs .containerAboutImage {
+    margin-top: 65px;
+    width: 80%;
+  }
+}
 .containerServices {
   margin-top: 200px;
   display: flex;
