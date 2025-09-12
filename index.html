@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>JTCup 72</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="src/style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -188,7 +189,7 @@
           </p>
         </div>
         <div class="containerServicesCards">
-          <div class="card">
+          <div class="cardServices">
             <img src="src/assets/icons/bikeServices.png" alt="" />
             <h3>Veiculos</h3>
             <p>
@@ -196,7 +197,7 @@
               locação, te esperando para acelerar.
             </p>
           </div>
-          <div class="card">
+          <div class="cardServices">
             <img src="src/assets/icons/car.png" alt="" />
             <h3>Premios</h3>
             <p>
@@ -204,15 +205,59 @@
               final de cada campeonato com direito a poliposition e premios.
             </p>
           </div>
-          <div class="card">
+          <div class="cardServices">
             <img src="src/assets/icons/race.png" alt="" />
             <h3>Equipamentos</h3>
             <p>
               Melhor que correr é correr com segurança e aqui valorizamos isso,
-              temos equipamentos para locações.
+              temos equipamentos para 
+              <br>locações.
             </p>
           </div>
         </div>
+        <!-- Componente mobile -->
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cardServices">
+                  <img src="src/assets/icons/bikeServices.png" alt="" />
+                  <h3>Veiculos</h3>
+                  <p>
+                    Temos uma grande variedade de veiculos na JTGarage prontos para
+                    locação, te esperando para acelerar.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cardServices">
+                  <img src="src/assets/icons/car.png" alt="" />
+                  <h3>Premios</h3>
+                  <p>
+                    Os pilotos vencedores das etapas do JTCup recebem premiação no
+                    final de cada campeonato com direito a poliposition e premios.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cardServices">
+                  <img src="src/assets/icons/race.png" alt="" />
+                  <h3>Equipamentos</h3>
+                  <p>
+                    Melhor que correr é correr com segurança e aqui valorizamos isso,
+                    temos equipamentos para locações.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
       </section>
 
       <section class="containerCategory" id="section2">
@@ -724,7 +769,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="src/js/activeFaq.js"></script>
     <script src="src/js/activeCategory.js"></script>
     <script src="src/js/carrosselDepoiment.js"></script>

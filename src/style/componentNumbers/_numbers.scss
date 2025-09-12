@@ -31,3 +31,68 @@
         }
     }
 }
+
+
+@media (max-width: 550px) {
+    .containerNumbers{
+        padding: 85px 0px;
+        .numbers{
+            width: 80%;
+            .numbersSpecs{
+                .valueSpec{
+                    font-size: 2em;
+                }
+               
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 750px) {
+    .containerNumbers{
+        padding: 125px 0px;
+        .numbers{
+            //width: 80%;
+            .numbersSpecs{
+                .valueSpec{
+                    font-size: 2em;
+                }
+               
+
+            }
+        }
+
+    }
+}
+
+
+/*
+
+@media (min-width: 1440px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //max-width: 1440px;
+    }
+
+    .containerNumbers{
+        max-width: 1440px;
+        padding: 125px 0px;
+        .numbers{
+            //width: 80%;
+            .numbersSpecs{
+                .valueSpec{
+                    font-size: 2em;
+                }
+               
+
+            }
+        }
+
+    }
+}
+*/

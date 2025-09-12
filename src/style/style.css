@@ -452,6 +452,53 @@ main {
   font-weight: 300;
 }
 
+@media (max-width: 550px) {
+  .containerNumbers {
+    padding: 85px 0px;
+  }
+  .containerNumbers .numbers {
+    width: 80%;
+  }
+  .containerNumbers .numbers .numbersSpecs .valueSpec {
+    font-size: 2em;
+  }
+}
+@media (max-width: 750px) {
+  .containerNumbers {
+    padding: 125px 0px;
+  }
+  .containerNumbers .numbers .numbersSpecs .valueSpec {
+    font-size: 2em;
+  }
+}
+/*
+
+@media (min-width: 1440px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        //max-width: 1440px;
+    }
+
+    .containerNumbers{
+        max-width: 1440px;
+        padding: 125px 0px;
+        .numbers{
+            //width: 80%;
+            .numbersSpecs{
+                .valueSpec{
+                    font-size: 2em;
+                }
+
+
+            }
+        }
+
+    }
+}
+*/
 .containerAboutUs {
   display: flex;
   justify-content: space-around;
@@ -484,6 +531,19 @@ main {
   font-size: 1.2em;
 }
 
+@media (max-width: 750px) {
+  .containerAboutUs {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerAboutUs .containerAboutText {
+    width: 80%;
+  }
+  .containerAboutUs .containerAboutImage {
+    margin-top: 65px;
+    width: 80%;
+  }
+}
 .containerServices {
   margin-top: 200px;
   display: flex;
@@ -501,20 +561,102 @@ main {
   align-items: center;
   text-align: center;
 }
-.containerServices .containerServicesCards .card {
-  max-width: 20%;
-}
-.containerServices .containerServicesCards .card img {
+.containerServices .containerServicesCards .cardServices img {
   width: 250px;
 }
-.containerServices .containerServicesCards .card h3 {
+.containerServices .containerServicesCards .cardServices h3 {
   margin: 20px 0px;
   color: #BF0606;
   font-weight: 700;
 }
-.containerServices .containerServicesCards .card p {
+.containerServices .containerServicesCards .cardServices p {
   color: #343434;
   font-weight: 400;
+}
+
+@media (max-width: 1440px) {
+  .containerServices .containerServicesCards .cardServices {
+    width: 30%;
+  }
+  .containerServices .containerServicesCards .cardServices img {
+    width: 130px;
+  }
+  .containerServices .carousel {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .containerServices {
+    margin-top: 125px;
+  }
+  .containerServices .containerServicesText {
+    width: 80%;
+    text-align: start;
+    max-width: 100%;
+  }
+  .containerServices .containerServicesCards {
+    display: none;
+  }
+  .containerServices .carousel {
+    width: 80%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .containerServices .carousel .carousel-inner .carousel-item .cardServices {
+    margin: 0px 0px 0px 85px;
+    width: 70%;
+    text-align: center;
+  }
+  .containerServices .carousel .carousel-inner .carousel-item .cardServices img {
+    width: 100%;
+  }
+  .containerServices .carousel .carousel-inner .carousel-item .cardServices h3 {
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 550px) {
+  .containerServices {
+    margin-top: 125px;
+  }
+  .containerServices .containerServicesText {
+    width: 80%;
+    text-align: start;
+    max-width: 100%;
+  }
+  .containerServices .containerServicesCards {
+    display: none;
+  }
+  .containerServices .carousel {
+    width: 80%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .containerServices .carousel .carousel-inner .carousel-item .cardServices {
+    margin: 0px 0px 0px 35px;
+    width: 70%;
+    text-align: center;
+  }
+  .containerServices .carousel .carousel-inner .carousel-item .cardServices img {
+    width: 100%;
+  }
+  .containerServices .carousel .carousel-inner .carousel-item .cardServices h3 {
+    margin: 10px 0px;
+  }
+}
+.carousel-control-prev .carousel-control-prev-icon {
+  color: red !important;
+  background-color: red !important;
+  border-radius: 18px;
+  padding: 5px !important;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+  color: red !important;
+  background-color: red !important;
+  border-radius: 18px;
+  padding: 5px !important;
 }
 
 .containerCategory {
