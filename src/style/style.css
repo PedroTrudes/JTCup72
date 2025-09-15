@@ -195,6 +195,8 @@ header .containerHeader nav ul {
   display: flex;
   justify-content: space-between;
   font-size: 1.5em;
+  padding: 0px;
+  margin: 0px;
 }
 header .containerHeader nav ul li {
   list-style: none;
@@ -211,7 +213,7 @@ header .containerHeader nav ul li .selectedHeader {
   font-weight: 700;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   header {
     top: 0px;
     width: 100vw;
@@ -550,6 +552,9 @@ main {
   flex-direction: column;
   align-items: center;
 }
+.containerServices .carousel {
+  display: none;
+}
 .containerServices .containerServicesText {
   text-align: center;
   max-width: 50%;
@@ -741,6 +746,41 @@ main {
   transition: all 2s ease-in-out;
 }
 
+@media (max-width: 750px) {
+  .containerCategory {
+    margin-top: 120px;
+    padding-top: 0px;
+  }
+  .containerCategory .containerCategoryText {
+    width: 80%;
+    text-align: start;
+    align-items: start;
+  }
+  .containerCategory .containerCategoryText .textDescription {
+    max-width: 100%;
+  }
+  .containerCategory .containerCategoryApresentation {
+    margin-top: 25px;
+    flex-direction: column;
+  }
+  .containerCategory .containerCategoryApresentation .categoryBotton {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .containerCategory .containerCategoryApresentation .categoryBotton .buttons {
+    margin: 10px;
+  }
+  .containerCategory .containerCategoryApresentation .categoryDivider {
+    margin: 35px 0px;
+    width: 90%;
+    height: 4px;
+  }
+  .containerCategory .containerCategoryApresentation .categoryDescription {
+    width: 100%;
+  }
+}
 .containerTrack {
   display: flex;
   align-items: center;
