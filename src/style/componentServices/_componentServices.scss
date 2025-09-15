@@ -4,6 +4,10 @@
     flex-direction: column;
     align-items: center;
 
+    .carousel{
+        display: none;
+    }
+
     .containerServicesText{
         text-align: center ;
         max-width: 50%;
