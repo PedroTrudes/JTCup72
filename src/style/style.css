@@ -1164,79 +1164,83 @@ main {
   justify-content: center;
   text-align: center;
 }
-.containerEvent .containerDate {
-  width: 80%;
+.containerEvent .containerCtaCalendario {
+  width: 55%;
+  margin-top: 95px;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+  align-items: end;
+  justify-content: end;
 }
-.containerEvent .containerDate .months {
+.containerEvent .containerCtaCalendario a {
+  color: #BF0606;
+}
+.containerEvent .containerCardEvent {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 80%;
+  align-items: center;
+  justify-content: center;
 }
-.containerEvent .containerDate .months .month {
-  font-size: 1.8em;
-  font-weight: 300;
-  color: #ADADAD;
-  cursor: pointer;
-  transition: all 0.3s ease-in;
+.containerEvent .containerCardEvent .cardEvent {
+  width: 323px;
+  height: 576px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+  box-sizing: border-box;
+  margin: 12px 40px;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.containerEvent .containerDate .months .month:hover {
-  font-weight: 700;
+.containerEvent .containerCardEvent .cardEvent .cardEventText {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 100%;
 }
-.containerEvent .containerDate .months .monthSelect {
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextTitle {
+  margin-bottom: 26px;
+}
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextTitle h3 {
   color: #BF0606;
   font-weight: 700;
 }
-.containerEvent .containerEventByMonth {
-  width: 80%;
-  margin-top: 20px;
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextTitle span {
+  color: #343434;
 }
-.containerEvent .containerEventByMonth .envetList {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-  gap: 18px;
-  justify-content: center;
-}
-.containerEvent .containerEventByMonth .envetList .eventCard {
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextInformation {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 5px;
-  padding: 15px 22px;
-  min-width: 280px;
-  min-height: 200px;
-  border-radius: 8px;
-  color: #F8F8F8;
-  background-color: #343434;
 }
-.containerEvent .containerEventByMonth .envetList .eventCard .titleEvent {
-  margin-bottom: 8px;
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextLocalization {
+  color: #BF0606;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-bottom: 10px;
 }
-.containerEvent .containerEventByMonth .envetList .eventCard .titleEvent h3 {
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextTime {
+  color: #343434;
   font-weight: 700;
+  font-size: 1em;
 }
-.containerEvent .containerEventByMonth .envetList .eventCard .dateEvent span {
-  font-size: 300;
-}
-.containerEvent .containerEventByMonth .envetList .eventCard .localizationEvent .btnAction {
-  display: flex;
-  margin-top: 22px;
-}
-.containerEvent .containerEventByMonth .envetList .eventCard .localizationEvent .btnAction a {
-  text-decoration: none;
-  color: #F8F8F8;
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextDate {
+  margin-top: 18px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 200px;
-  padding: 4px;
-  background-color: #BF0606;
-  border-radius: 8px;
+  justify-content: start;
+}
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventDay {
+  color: #BF0606;
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 12px;
+}
+.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventMonth {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #343434;
 }
 
 footer {

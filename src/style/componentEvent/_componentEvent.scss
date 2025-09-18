@@ -6,104 +6,94 @@
     justify-content: center;
     text-align: center;
 
-    .containerDate{
-        width: 80%;
+    .containerCtaCalendario{
+        //border: 1px solid red;
+        width: 55%;
+        margin-top: 95px;
+        margin-bottom: 20px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        .months{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            width: 80%;
+        align-items: end;
+        justify-content: end;
 
-            .month{
-                font-size: 1.8em;
-                font-weight: $font-light;
-                color: $gray-color;
-                cursor: pointer;
-                transition: all 0.3s ease-in;
-            }
-
-            .month:hover{
-                font-weight: $font-bold;
-            
-            }
-
-            .monthSelect{
-                color: $red-color;
-                font-weight: $font-bold;
-            }
+        a{
+            color: $red-color;
         }
     }
 
-    .containerEventByMonth{
-        width: 80%;
-        margin-top: 20px;
-        .envetList{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-            gap: 18px;
-            justify-content: center;
-            
-            //display: flex;
-            //flex-direction: row;
-            //list-style: none;
-            //align-items: center;
-            //justify-content: flex-start;
-            //flex-wrap: wrap;
-            //gap: 36px;
-            
-            .eventCard{
+    .containerCardEvent{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .cardEvent{
+            width: 323px;
+            height: 576px;
+            //border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            text-align: start;
+            box-sizing: border-box;
+            margin: 12px 40px;
+            border-radius: 8px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+            .cardEventText{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                padding: 32px;
+                //border: 1px solid red;
+                width: 100%;
 
-                margin: 5px;
-                padding: 15px 22px;
-                min-width: 280px;
-                min-height: 200px;    
-                
-                border-radius: $border-radius-button;
-
-                color: $withe-color;
-                background-color: $black-color;
-
-                .titleEvent{
-                    margin-bottom: 8px;
+                .eventTextTitle{
+                    //border: 1px solid blue;
+                    margin-bottom: 26px;
                     h3{
+                        color: $red-color;
                         font-weight: $font-bold;
                     }
-                }
-                .dateEvent{
                     span{
-                        font-size: $font-light;
+                        color: $black-color;
                     }
                 }
-                .localizationEvent{
-                    .btnAction{
-                        display: flex;
-                        margin-top: 22px;
-                        a{
-                            text-decoration: none;
-                            color: $withe-color;
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-around;
-                            width: 200px;
-                            padding: 4px;
-                            background-color: $red-color;
-                            border-radius: $border-radius-button;
-                            
-                            
-                        }
+
+                .eventTextInformation{
+                    display: flex;
+                    flex-direction: column;
+                    .eventTextLocalization{
+                        color: $red-color;
+                        font-weight: $font-light;
+                        font-size: 0.8em;
+                        margin-bottom: 10px;
+                    }
+                    .eventTextTime{
+                        color: $black-color;
+                        font-weight: $font-bold;
+                        font-size: 1em;
+                    }
+                }
+
+                .eventTextDate{
+                    margin-top: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    .eventDay{
+                        color: $red-color;
+                        font-size: 2em;
+                        font-weight: $font-bold;
+                        margin-right: 12px;
+                    }
+                    .eventMonth{
+                        font-size: 1.5em;
+                        font-weight: $font-light;
+                        color: $black-color;
                     }
                 }
             }
         }
-
     }
 
 }
