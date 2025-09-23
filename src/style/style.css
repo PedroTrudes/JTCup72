@@ -1180,6 +1180,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .containerEvent .containerCardEvent .cardEvent {
   width: 323px;
@@ -1243,6 +1244,49 @@ main {
   color: #343434;
 }
 
+@media (max-width: 750px) {
+  .containerEvent {
+    padding-top: 112px;
+  }
+  .containerEvent .containerEventText {
+    width: 80%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .containerEvent .containerCtaCalendario {
+    padding: 0px 12px 0px 0px;
+  }
+  .containerEvent .containerCardEvent .cardEvent {
+    width: 423px;
+    height: 675px;
+  }
+  .containerEvent .containerCardEvent .cardEvent .eventFigure img {
+    width: 423px;
+  }
+}
+@media (max-width: 550px) {
+  .containerEvent {
+    padding-top: 112px;
+  }
+  .containerEvent .containerCtaCalendario {
+    width: 80%;
+  }
+  .containerEvent .containerCardEvent {
+    width: 80%;
+  }
+  .containerEvent .containerCardEvent .cardEvent {
+    width: 100%;
+  }
+  .containerEvent .containerCardEvent .cardEvent .eventFigure {
+    width: 100%;
+  }
+  .containerEvent .containerCardEvent .cardEvent .eventFigure img {
+    width: 340px;
+  }
+}
 footer {
   border-top: 0.1px solid #ADADAD;
   padding: 45px 145px;

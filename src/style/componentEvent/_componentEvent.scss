@@ -25,12 +25,14 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
 
         .cardEvent{
             width: 323px;
             height: 576px;
             //border: 1px solid red;
             display: flex;
+            //flex-wrap: wrap;
             flex-direction: column;
             justify-content: space-between;
             align-items: start;
@@ -96,4 +98,64 @@
         }
     }
 
+}
+
+
+
+@media (max-width: 750px) {
+    .containerEvent{
+        padding-top: 112px;
+        .containerEventText{
+            width: 80%;
+            text-align: start;
+            display: flex;
+            flex-direction: column;
+            //border: 1px solid red;
+            align-items: start;
+            justify-content: start;
+        }
+        .containerCtaCalendario{
+            //border: 1px solid red;
+            padding: 0px 12px 0px 0px;
+        }
+        .containerCardEvent{
+            //flex-wrap: wrap;
+
+            .cardEvent{
+                width: 423px;
+                height: 675px;
+                .eventFigure {
+                    img{
+                        width: 423px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .containerEvent{
+        padding-top: 112px;
+         .containerCtaCalendario{
+            width: 80%;
+        }
+        .containerCardEvent{
+            //border: 1px solid red;
+            width: 80%;
+            .cardEvent{
+                width: 100%;
+                //width: 423px;
+                //height: 675px;
+                .eventFigure {
+                    width: 100%;
+                    img{
+                        width: 340px;
+                    }
+                }
+            }
+        }
+    }
+    
 }
