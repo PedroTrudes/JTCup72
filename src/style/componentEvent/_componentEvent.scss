@@ -105,6 +105,10 @@
 @media (max-width: 750px) {
     .containerEvent{
         padding-top: 112px;
+        .containerCtaCalendario{
+            margin-top: 25px;
+            width: 80%;
+        }
         .containerEventText{
             width: 80%;
             text-align: start;
@@ -124,6 +128,7 @@
             .cardEvent{
                 width: 423px;
                 height: 675px;
+                margin: 12px 0px;
                 .eventFigure {
                     img{
                         width: 423px;
@@ -138,20 +143,24 @@
 @media (max-width: 550px) {
     .containerEvent{
         padding-top: 112px;
-         .containerCtaCalendario{
-            width: 80%;
-        }
         .containerCardEvent{
             //border: 1px solid red;
             width: 80%;
             .cardEvent{
+                //border: 1px solid rgb(45, 202, 241);
                 width: 100%;
                 //width: 423px;
-                //height: 675px;
+                height: 500px;
                 .eventFigure {
                     width: 100%;
+                    overflow: hidden;
+                    border-radius: 0px 0px 8px 8px;
                     img{
-                        width: 340px;
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        display: block;
+                        border-radius: 0px 0px 8px 8px;
                     }
                 }
             }
