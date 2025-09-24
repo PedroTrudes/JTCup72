@@ -1093,6 +1093,80 @@ main {
     opacity: 1;
   }
 }
+@media (max-width: 750px) {
+  .containerContact {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .containerContact .contact {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .containerContact .contact .containerContactText {
+    width: 100%;
+  }
+  .containerContact .contact .containerContactImage {
+    margin-top: 90px;
+  }
+  .containerContact .contact .containerContactImage img {
+    width: 90%;
+  }
+  .containerContact .contact .containerContactImage span {
+    animation: fadeIn 4s both;
+    animation-timeline: view();
+    position: absolute;
+    padding: 8px 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5607843137);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .containerContact .contact .containerContactImage .imageSpan01 {
+    margin-left: -41px;
+    top: -40px;
+  }
+  .containerContact .contact .containerContactImage .imageSpan02 {
+    margin-left: -61px;
+    top: 10px;
+  }
+  .containerContact .contact .containerContactImage .imageSpan03 {
+    margin-left: -81px;
+    top: 60px;
+  }
+}
+@media (max-width: 550px) {
+  .containerContact .contact .containerContactImage img {
+    width: 230px;
+  }
+  .containerContact .contact .containerContactImage span {
+    animation: fadeIn 4s both;
+    animation-timeline: view();
+    position: absolute;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.5607843137);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  .containerContact .contact .containerContactImage .imageSpan01 {
+    margin-left: -21px;
+    top: -40px;
+  }
+  .containerContact .contact .containerContactImage .imageSpan02 {
+    margin-left: -41px;
+    top: 10px;
+  }
+  .containerContact .contact .containerContactImage .imageSpan03 {
+    margin-left: -61px;
+    top: 60px;
+  }
+}
 .containerFaq {
   margin-top: 250px;
   display: flex;
