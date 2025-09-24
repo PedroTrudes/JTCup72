@@ -1479,6 +1479,7 @@ footer .containerFooter .containerSocialLinks span {
 footer .containerFooter .containerSocialLinks ul {
   display: flex;
   margin-top: 5px;
+  padding-left: 0px;
 }
 footer .containerFooter .containerSocialLinks ul li {
   list-style: none;
@@ -1489,4 +1490,37 @@ footer .containerFooter .containerSocialLinks ul li a {
 }
 footer .containerFooter .containerSocialLinks ul li a img {
   width: 35px;
+}
+
+@media (max-width: 750px) {
+  footer {
+    padding: 45px 0px;
+    width: 100%;
+  }
+  footer .containerFooter {
+    flex-direction: column;
+    width: 100%;
+  }
+  footer .containerFooter .containerFooterLogo {
+    padding: 15px 0px;
+  }
+  footer .containerFooter .containerTextMotivation {
+    padding-bottom: 30px;
+  }
+  footer .containerFooter .containerSocialLinks {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .containerFooter .containerSocialLinks ul {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0px;
+    text-align: inherit;
+  }
+  footer .containerFooter .containerSocialLinks ul li {
+    margin: 0px 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

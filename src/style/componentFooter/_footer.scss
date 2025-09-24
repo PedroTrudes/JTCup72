@@ -30,6 +30,7 @@ footer{
             ul{
                 display: flex;
                 margin-top: 5px;
+                padding-left: 0px;
                 li{
                     list-style: none;
                     margin: 0px 12px;
@@ -38,10 +39,54 @@ footer{
                         text-decoration: none;
                         img{
                             width: 35px;
+                            
                         }
                     }
                 }
             }
         }
     }
+}
+
+@media (max-width: 750px) {
+    footer{
+        padding: 45px 0px;
+        width: 100%;
+        .containerFooter{
+            flex-direction: column;
+            //border: 1px solid red;
+            width: 100%;
+
+            .containerFooterLogo{
+                padding: 15px 0px;
+                //border: 1px solid red;
+            }
+            .containerTextMotivation{
+                padding-bottom: 30px;
+            }
+            .containerSocialLinks{
+                //border: 1px solid yellow;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                ul{
+                    align-items: center;
+                    justify-content: center;
+                    //border: 1px solid blue;
+                    flex-direction: row;
+                    margin: 0px;
+                    text-align: inherit;
+                    li{
+                        margin: 0px 5px;
+                        //border: 1px solid red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    
 }
