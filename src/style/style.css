@@ -1269,6 +1269,48 @@ main {
   display: none;
 }
 
+@media (max-width: 750px) {
+  .containerFaq {
+    margin: 120px 0px;
+  }
+  .containerFaq .containerFaqText {
+    width: 80%;
+    align-items: start;
+  }
+  .containerFaq .containerButtonFaq {
+    width: 80%;
+  }
+  .containerFaq .containerButtonFaq button {
+    margin: 10px;
+    font-size: 1em;
+  }
+  .containerFaq .containerFaqs .faqsCard {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  .containerFaq .containerFaqs .faqsCard .cardTextTitle h3 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 550px) {
+  .containerFaq .containerButtonFaq button {
+    margin: 5px;
+    font-size: 1em;
+  }
+  .containerFaq .containerFaqs .faqsCard .cardIconCategory img {
+    width: 40px;
+  }
+  .containerFaq .containerFaqs .faqsCard .cardTextTitle h3 {
+    font-size: 1em;
+  }
+  .containerFaq .containerFaqs .faqsCard .cardTextTitle .cardTextSpan span {
+    font-size: 0.8em;
+  }
+  .containerFaq .containerFaqs .faqsCard .cardIconArrow img {
+    width: 15px;
+  }
+}
 .containerEvent {
   padding-top: 225px;
   display: flex;
