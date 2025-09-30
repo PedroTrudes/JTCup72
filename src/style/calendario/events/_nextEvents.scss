@@ -17,7 +17,77 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        .cardEventClose{
+            width: 323px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            text-align: start;
+            box-sizing: border-box;
+            margin: 12px 10px;
+            border-radius: 8px;
+            background-color: $black-color;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
+            .cardEventText{
+                display: flex;
+                flex-direction: column;
+                padding: 32px;
+                width: 100%;
+
+                .eventTextTitle{
+                    margin-bottom: 26px;
+                    h3{
+                        font-weight: $font-bold;
+                        color: #acacac;
+                    }
+                    span{
+                        color: #acacac;
+                    }
+                }
+
+                .eventTextInformation{
+                    display: flex;
+                    flex-direction: column;
+                    .eventTextLocalization{
+                        color: #acacac;
+                        font-weight: $font-light;
+                        font-size: 0.8em;
+                        margin-bottom: 10px;
+                    }
+                    .eventTextTime{
+                        color: #acacac;
+                        font-weight: $font-bold;
+                        font-size: 1em;
+                    }
+                }
+
+                .eventTextDate{
+                    margin-top: 18px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    .eventDay{
+                        color: #acacac;
+                        font-size: 2em;
+                        font-weight: $font-bold;
+                        margin-right: 12px;
+                    }
+                    .eventMonth{
+                        font-size: 1.5em;
+                        font-weight: $font-light;
+                        color: #acacac;
+                    }
+                }
+            }
+            .eventFigure{
+                img{
+                    opacity: 0.5;
+                }
+            }
+
+        }
         .cardEvent{
             width: 323px;
             display: flex;
@@ -86,4 +156,6 @@
         }
     }
     }
+
+
 }

@@ -1544,6 +1544,70 @@ footer .containerFooter .containerSocialLinks ul li a img {
   justify-content: center;
   flex-wrap: wrap;
 }
+.events .nextEvents .containerCardEvent .cardEventClose {
+  width: 323px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+  box-sizing: border-box;
+  margin: 12px 10px;
+  border-radius: 8px;
+  background-color: #343434;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 100%;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextTitle {
+  margin-bottom: 26px;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextTitle h3 {
+  font-weight: 700;
+  color: #acacac;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextTitle span {
+  color: #acacac;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextInformation {
+  display: flex;
+  flex-direction: column;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextInformation .eventTextLocalization {
+  color: #acacac;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextInformation .eventTextTime {
+  color: #acacac;
+  font-weight: 700;
+  font-size: 1em;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextDate {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextDate .eventDay {
+  color: #acacac;
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 12px;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextDate .eventMonth {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #acacac;
+}
+.events .nextEvents .containerCardEvent .cardEventClose .eventFigure img {
+  opacity: 0.5;
+}
 .events .nextEvents .containerCardEvent .cardEvent {
   width: 323px;
   display: flex;
