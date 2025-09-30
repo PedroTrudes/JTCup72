@@ -1532,19 +1532,81 @@ footer .containerFooter .containerSocialLinks ul li a img {
 .events .nextEvents {
   width: 100%;
   padding-bottom: 120px;
+  height: auto;
 }
 .events .nextEvents h2 {
   margin: 45px 0px;
   font-size: 2em;
 }
-.events .nextEvents .containerCardEvent {
+
+.containerCardEvent {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.events .nextEvents .containerCardEvent .cardEventClose {
+.containerCardEvent .cardEvent {
+  width: 323px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  text-align: start;
+  box-sizing: border-box;
+  margin: 12px 10px;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.containerCardEvent .cardEvent .cardEventText {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  width: 100%;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextTitle {
+  margin-bottom: 26px;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextTitle h3 {
+  color: #BF0606;
+  font-weight: 700;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextTitle span {
+  color: #343434;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextInformation {
+  display: flex;
+  flex-direction: column;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextLocalization {
+  color: #BF0606;
+  font-weight: 300;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextTime {
+  color: #343434;
+  font-weight: 700;
+  font-size: 1em;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextDate {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextDate .eventDay {
+  color: #BF0606;
+  font-size: 2em;
+  font-weight: 700;
+  margin-right: 12px;
+}
+.containerCardEvent .cardEvent .cardEventText .eventTextDate .eventMonth {
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #343434;
+}
+.containerCardEvent .cardEventClose {
   width: 323px;
   display: flex;
   flex-direction: column;
@@ -1557,120 +1619,68 @@ footer .containerFooter .containerSocialLinks ul li a img {
   background-color: #343434;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText {
+.containerCardEvent .cardEventClose .cardEventText {
   display: flex;
   flex-direction: column;
   padding: 32px;
   width: 100%;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextTitle {
+.containerCardEvent .cardEventClose .cardEventText .eventTextTitle {
   margin-bottom: 26px;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextTitle h3 {
+.containerCardEvent .cardEventClose .cardEventText .eventTextTitle h3 {
   font-weight: 700;
   color: #acacac;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextTitle span {
+.containerCardEvent .cardEventClose .cardEventText .eventTextTitle span {
   color: #acacac;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextInformation {
+.containerCardEvent .cardEventClose .cardEventText .eventTextInformation {
   display: flex;
   flex-direction: column;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextInformation .eventTextLocalization {
+.containerCardEvent .cardEventClose .cardEventText .eventTextInformation .eventTextLocalization {
   color: #acacac;
   font-weight: 300;
   font-size: 0.8em;
   margin-bottom: 10px;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextInformation .eventTextTime {
+.containerCardEvent .cardEventClose .cardEventText .eventTextInformation .eventTextTime {
   color: #acacac;
   font-weight: 700;
   font-size: 1em;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextDate {
+.containerCardEvent .cardEventClose .cardEventText .eventTextDate {
   margin-top: 18px;
   display: flex;
   align-items: center;
   justify-content: start;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextDate .eventDay {
+.containerCardEvent .cardEventClose .cardEventText .eventTextDate .eventDay {
   color: #acacac;
   font-size: 2em;
   font-weight: 700;
   margin-right: 12px;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .cardEventText .eventTextDate .eventMonth {
+.containerCardEvent .cardEventClose .cardEventText .eventTextDate .eventMonth {
   font-size: 1.5em;
   font-weight: 300;
   color: #acacac;
 }
-.events .nextEvents .containerCardEvent .cardEventClose .eventFigure img {
+.containerCardEvent .cardEventClose .eventFigure img {
   opacity: 0.5;
 }
-.events .nextEvents .containerCardEvent .cardEvent {
-  width: 323px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  text-align: start;
-  box-sizing: border-box;
-  margin: 12px 10px;
-  border-radius: 8px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+.allEventsList {
+  width: 1440px;
+  margin-bottom: 120px;
 }
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText {
-  display: flex;
-  flex-direction: column;
-  padding: 32px;
-  width: 100%;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextTitle {
-  margin-bottom: 26px;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextTitle h3 {
-  color: #BF0606;
-  font-weight: 700;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextTitle span {
-  color: #343434;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextInformation {
-  display: flex;
-  flex-direction: column;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextLocalization {
-  color: #BF0606;
-  font-weight: 300;
-  font-size: 0.8em;
-  margin-bottom: 10px;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextTime {
-  color: #343434;
-  font-weight: 700;
-  font-size: 1em;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextDate {
-  margin-top: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventDay {
-  color: #BF0606;
+.allEventsList h2 {
+  margin: 45px 0px;
   font-size: 2em;
-  font-weight: 700;
-  margin-right: 12px;
-}
-.events .nextEvents .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventMonth {
-  font-size: 1.5em;
-  font-weight: 300;
-  color: #343434;
 }
 
 main {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   align-items: center;

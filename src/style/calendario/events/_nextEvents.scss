@@ -1,161 +1,174 @@
-.events{
+.events {
     width: 1440px;
     max-width: 1440px;
     margin-top: 120px;
 
-    .nextEvents{
+    .nextEvents {
         width: 100%;
         padding-bottom: 120px;
+        height: auto;
 
-        h2{
+        h2 {
             margin: 45px 0px;
-            font-size: 2em; 
+            font-size: 2em;
         }
-        .containerCardEvent{
+    }
+}
+
+.containerCardEvent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .cardEvent {
+        width: 323px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        .cardEventClose{
-            width: 323px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        text-align: start;
+        box-sizing: border-box;
+        margin: 12px 10px;
+        border-radius: 8px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+        .cardEventText {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: start;
-            text-align: start;
-            box-sizing: border-box;
-            margin: 12px 10px;
-            border-radius: 8px;
-            background-color: $black-color;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            padding: 32px;
+            width: 100%;
 
-            .cardEventText{
-                display: flex;
-                flex-direction: column;
-                padding: 32px;
-                width: 100%;
+            .eventTextTitle {
+                margin-bottom: 26px;
 
-                .eventTextTitle{
-                    margin-bottom: 26px;
-                    h3{
-                        font-weight: $font-bold;
-                        color: #acacac;
-                    }
-                    span{
-                        color: #acacac;
-                    }
+                h3 {
+                    color: $red-color;
+                    font-weight: $font-bold;
                 }
 
-                .eventTextInformation{
-                    display: flex;
-                    flex-direction: column;
-                    .eventTextLocalization{
-                        color: #acacac;
-                        font-weight: $font-light;
-                        font-size: 0.8em;
-                        margin-bottom: 10px;
-                    }
-                    .eventTextTime{
-                        color: #acacac;
-                        font-weight: $font-bold;
-                        font-size: 1em;
-                    }
-                }
-
-                .eventTextDate{
-                    margin-top: 18px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: start;
-                    .eventDay{
-                        color: #acacac;
-                        font-size: 2em;
-                        font-weight: $font-bold;
-                        margin-right: 12px;
-                    }
-                    .eventMonth{
-                        font-size: 1.5em;
-                        font-weight: $font-light;
-                        color: #acacac;
-                    }
-                }
-            }
-            .eventFigure{
-                img{
-                    opacity: 0.5;
+                span {
+                    color: $black-color;
                 }
             }
 
-        }
-        .cardEvent{
-            width: 323px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: start;
-            text-align: start;
-            box-sizing: border-box;
-            margin: 12px 10px;
-            border-radius: 8px;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
-            .cardEventText{
+            .eventTextInformation {
                 display: flex;
                 flex-direction: column;
-                padding: 32px;
-                //border: 1px solid red;
-                width: 100%;
 
-                .eventTextTitle{
-                    //border: 1px solid blue;
-                    margin-bottom: 26px;
-                    h3{
-                        color: $red-color;
-                        font-weight: $font-bold;
-                    }
-                    span{
-                        color: $black-color;
-                    }
+                .eventTextLocalization {
+                    color: $red-color;
+                    font-weight: $font-light;
+                    font-size: 0.8em;
+                    margin-bottom: 10px;
                 }
 
-                .eventTextInformation{
-                    display: flex;
-                    flex-direction: column;
-                    .eventTextLocalization{
-                        color: $red-color;
-                        font-weight: $font-light;
-                        font-size: 0.8em;
-                        margin-bottom: 10px;
-                    }
-                    .eventTextTime{
-                        color: $black-color;
-                        font-weight: $font-bold;
-                        font-size: 1em;
-                    }
+                .eventTextTime {
+                    color: $black-color;
+                    font-weight: $font-bold;
+                    font-size: 1em;
+                }
+            }
+
+            .eventTextDate {
+                margin-top: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+                .eventDay {
+                    color: $red-color;
+                    font-size: 2em;
+                    font-weight: $font-bold;
+                    margin-right: 12px;
                 }
 
-                .eventTextDate{
-                    margin-top: 18px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: start;
-                    .eventDay{
-                        color: $red-color;
-                        font-size: 2em;
-                        font-weight: $font-bold;
-                        margin-right: 12px;
-                    }
-                    .eventMonth{
-                        font-size: 1.5em;
-                        font-weight: $font-light;
-                        color: $black-color;
-                    }
+                .eventMonth {
+                    font-size: 1.5em;
+                    font-weight: $font-light;
+                    color: $black-color;
                 }
             }
         }
     }
+
+    .cardEventClose {
+        width: 323px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        text-align: start;
+        box-sizing: border-box;
+        margin: 12px 10px;
+        border-radius: 8px;
+        background-color: $black-color;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+        .cardEventText {
+            display: flex;
+            flex-direction: column;
+            padding: 32px;
+            width: 100%;
+
+            .eventTextTitle {
+                margin-bottom: 26px;
+
+                h3 {
+                    font-weight: $font-bold;
+                    color: #acacac;
+                }
+
+                span {
+                    color: #acacac;
+                }
+            }
+
+            .eventTextInformation {
+                display: flex;
+                flex-direction: column;
+
+                .eventTextLocalization {
+                    color: #acacac;
+                    font-weight: $font-light;
+                    font-size: 0.8em;
+                    margin-bottom: 10px;
+                }
+
+                .eventTextTime {
+                    color: #acacac;
+                    font-weight: $font-bold;
+                    font-size: 1em;
+                }
+            }
+
+            .eventTextDate {
+                margin-top: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+
+                .eventDay {
+                    color: #acacac;
+                    font-size: 2em;
+                    font-weight: $font-bold;
+                    margin-right: 12px;
+                }
+
+                .eventMonth {
+                    font-size: 1.5em;
+                    font-weight: $font-light;
+                    color: #acacac;
+                }
+            }
+        }
+
+        .eventFigure {
+            img {
+                opacity: 0.5;
+            }
+        }
+
     }
-
-
 }
