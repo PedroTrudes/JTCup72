@@ -1525,7 +1525,6 @@ footer .containerFooter .containerSocialLinks ul li a img {
   }
 }
 .events {
-  width: 1440px;
   max-width: 1440px;
   margin-top: 120px;
 }
@@ -1545,6 +1544,7 @@ footer .containerFooter .containerSocialLinks ul li a img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 31px;
 }
 .containerCardEvent .cardEvent {
   width: 323px;
@@ -1671,19 +1671,90 @@ footer .containerFooter .containerSocialLinks ul li a img {
   opacity: 0.5;
 }
 
+@media (max-width: 750px) {
+  .events {
+    width: 100%;
+  }
+  .events .nextEvents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .events .nextEvents h2 {
+    margin: 45px 0px;
+    font-size: 2em;
+    width: 80%;
+  }
+  .events .containerCardEvent .cardEventClose {
+    width: 423px;
+    height: 675px;
+    margin: 12px 0px;
+  }
+  .events .containerCardEvent .cardEventClose .eventFigure img {
+    width: 423px;
+  }
+  .events .containerCardEvent .cardEvent {
+    width: 423px;
+    height: 675px;
+    margin: 12px 0px;
+  }
+  .events .containerCardEvent .cardEvent .eventFigure img {
+    width: 423px;
+  }
+  .events .disclaimerEvents {
+    color: #BF0606;
+    padding-top: 30px;
+  }
+}
 .allEventsList {
-  width: 1440px;
+  max-width: 1440px;
   margin-bottom: 120px;
 }
 .allEventsList h2 {
+  width: 100%;
   margin: 45px 0px;
   font-size: 2em;
 }
 
+@media (max-width: 750px) {
+  .allEventsList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .allEventsList h2 {
+    margin: 45px 0px;
+    font-size: 2em;
+    width: 80%;
+  }
+  .allEventsList .containerCardEvent .cardEventClose {
+    width: 423px;
+    height: 675px;
+    margin: 12px 0px;
+  }
+  .allEventsList .containerCardEvent .cardEventClose .eventFigure img {
+    width: 423px;
+  }
+  .allEventsList .containerCardEvent .cardEvent {
+    width: 423px;
+    height: 675px;
+    margin: 12px 0px;
+  }
+  .allEventsList .containerCardEvent .cardEvent .eventFigure img {
+    width: 423px;
+  }
+}
 main {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.bannerCalender {
+  border: 1px solid red;
 }/*# sourceMappingURL=style.css.map */

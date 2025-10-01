@@ -1,8 +1,53 @@
-.allEventsList{
-    width: 1440px;
+.allEventsList {
+    max-width: 1440px;
     margin-bottom: 120px;
-    h2{
+        
+    h2 {
+        width: 100%;
         margin: 45px 0px;
         font-size: 2em;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .allEventsList {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            margin: 45px 0px;
+            font-size: 2em;
+            width: 80%;
+        }
+
+        .containerCardEvent {
+            .cardEventClose {
+                width: 423px;
+                height: 675px;
+                margin: 12px 0px;
+
+                .eventFigure {
+                    img {
+                        width: 423px;
+                    }
+                }
+            }
+
+            .cardEvent {
+                width: 423px;
+                height: 675px;
+                margin: 12px 0px;
+
+                .eventFigure {
+                    img {
+                        width: 423px;
+                    }
+                }
+            }
+        }
     }
 }
