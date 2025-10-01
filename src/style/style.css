@@ -161,6 +161,18 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
+.footer {
+  display: none;
+}
+
+.header {
+  display: none;
+}
+
+.main {
+  display: none;
+}
+
 header {
   position: fixed;
   top: 25px;

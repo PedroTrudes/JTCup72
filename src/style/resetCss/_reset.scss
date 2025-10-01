@@ -12,3 +12,16 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
   //border: 1px solid red;
 }
+
+//Necessario colocar com display no para ativar a animacao de abertura da pagina
+.footer{
+  display: none;
+}
+
+.header{
+  display: none;
+}
+
+.main{
+  display: none;
+}
