@@ -4,13 +4,15 @@
     align-items: center;
     margin-top: 245px;
     max-width: 1440px;
+    //border: 1px solid red;
     .containerDepoimentText{
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border: 1px solid red;
+        //border: 1px solid red;
+        padding-bottom: 120px;
         .textTitle{
             max-width: 40%;
         }
@@ -20,22 +22,27 @@
     }
 
     .containerCarrossel{
-        border: 1px solid blue;
+        //border: 1px solid blue;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         
         .carrosselDepoiment{
             display: flex;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
-            padding: 20px;
+            //padding: 20px 0px;
             max-width: 100%;
+            
             &::-webkit-scrollbar {
                 display: none;
             }
             scrollbar-width: none;
             -ms-overflow-style: none;
+            
             .cardDepoiment{
-                width: 380px;
+                width: 360px;
                 height: 470px;
                 flex-shrink: 0; /* evita que os itens diminuam */
                 scroll-snap-align: start; /* onde o item "encaixa" */
@@ -80,11 +87,42 @@
     }
 
     .containerCarrosselBtn{
-
+        //border: 1px solid red;
+        margin: 12px 0px;
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            border: none;
+            background-color: transparent;
+            padding: 5px;
+            //border-radius: 25px;
         }
 
+        .carrosselIndicator {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 8px;
+
+            span {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background: #ccc;
+                transition: background 0.3s ease;
+
+                &.activeIndicator {
+                background: #333;
+                }
+            }
+            }
+    }
+
     .disableButtonCarrossel{
-        background-color: red;
+        //background-color: red;
+        opacity: 0.5;
         cursor: not-allowed;
         pointer-events: none;
         }

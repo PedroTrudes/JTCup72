@@ -2,8 +2,12 @@ const carrossel = document.querySelector(".carrosselDepoiment");
 const btnPrev = document.querySelector(".btnPrev");
 const btnNext = document.querySelector(".btnNext");
 const card = document.querySelectorAll(".cardDepoiment");
+const containerIndicator = document.querySelector(".carrosselIndicator");
+
 
 let cardWidth = card[0].offsetWidth;
+
+const indicatorCarrossel = containerIndicator.querySelectorAll("span");
 
 function updateCtas(){
     const maxScrollLeft = carrossel.scrollWidth - carrossel.clientWidth;
@@ -19,7 +23,9 @@ function updateCtas(){
     }else{
         btnNext.classList.remove("disableButtonCarrossel");
     } 
+
 }
+
 
 carrossel.addEventListener("scroll", updateCtas );
 

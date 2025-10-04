@@ -912,7 +912,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid red;
+  padding-bottom: 120px;
 }
 .containerDepoiment .containerDepoimentText .textTitle {
   max-width: 40%;
@@ -921,14 +921,15 @@ main {
   max-width: 40%;
 }
 .containerDepoiment .containerCarrossel {
-  border: 1px solid blue;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .containerDepoiment .containerCarrossel .carrosselDepoiment {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  padding: 20px;
   max-width: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -937,7 +938,7 @@ main {
   display: none;
 }
 .containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment {
-  width: 380px;
+  width: 360px;
   height: 470px;
   flex-shrink: 0; /* evita que os itens diminuam */
   scroll-snap-align: start; /* onde o item "encaixa" */
@@ -974,8 +975,36 @@ main {
   text-align: center;
   font-size: 1rem;
 }
+.containerDepoiment .containerCarrosselBtn {
+  margin: 12px 0px;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+.containerDepoiment .containerCarrosselBtn button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+.containerDepoiment .containerCarrosselBtn .carrosselIndicator {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+.containerDepoiment .containerCarrosselBtn .carrosselIndicator span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  transition: background 0.3s ease;
+}
+.containerDepoiment .containerCarrosselBtn .carrosselIndicator span.activeIndicator {
+  background: #333;
+}
 .containerDepoiment .disableButtonCarrossel {
-  background-color: red;
+  opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
 }
