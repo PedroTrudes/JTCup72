@@ -161,18 +161,19 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-.footer {
+/* 
+.footer{
   display: none;
 }
 
-.header {
+.header{
   display: none;
 }
 
-.main {
+.main{
   display: none;
 }
-
+*/
 header {
   position: fixed;
   top: 25px;
@@ -903,6 +904,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 245px;
+  max-width: 1440px;
 }
 .containerDepoiment .containerDepoimentText {
   text-align: center;
@@ -910,6 +912,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 1px solid red;
 }
 .containerDepoiment .containerDepoimentText .textTitle {
   max-width: 40%;
@@ -917,128 +920,66 @@ main {
 .containerDepoiment .containerDepoimentText .textDescription {
   max-width: 40%;
 }
-.containerDepoiment .containerUserDepoiment {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 115px;
-  width: 80%;
+.containerDepoiment .containerCarrossel {
+  border: 1px solid blue;
+  width: 100%;
 }
-.containerDepoiment .containerUserDepoiment .depoimentCard {
+.containerDepoiment .containerCarrossel .carrosselDepoiment {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px;
+  max-width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.containerDepoiment .containerCarrossel .carrosselDepoiment::-webkit-scrollbar {
+  display: none;
+}
+.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment {
+  width: 380px;
+  height: 470px;
+  flex-shrink: 0; /* evita que os itens diminuam */
+  scroll-snap-align: start; /* onde o item "encaixa" */
   position: relative;
-  margin: 0px 15px;
+  overflow: hidden;
 }
-.containerDepoiment .containerUserDepoiment .depoimentCard .cardText {
-  background-color: rgba(255, 255, 255, 0.8705882353);
-  height: 40%;
+.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage {
   width: 100%;
-  padding: 15px;
-  bottom: 0px;
+  height: 100%;
+}
+.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  opacity: 1;
-}
-.containerDepoiment .containerUserDepoiment .depoimentCard .cardText .textApresentation {
-  color: #BF0606;
+  bottom: 0;
+  left: 0;
   width: 100%;
+  background: rgba(255, 255, 255, 0.8078431373);
+  color: #BF0606;
+  padding: 18px;
+}
+.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textHead {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 8px 0px;
 }
-.containerDepoiment .containerUserDepoiment .depoimentCard .cardText .textApresentation .textApresentationName {
-  font-weight: 700;
+.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textDescription {
+  text-align: center;
+  font-size: 1rem;
 }
-.containerDepoiment .containerArrowCarrossel {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.containerDepoiment .containerArrowCarrossel .indicatorCarrossel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 35px 0px;
-}
-.containerDepoiment .containerArrowCarrossel .indicatorCarrossel .indicator {
-  height: 8px;
-  width: 8px;
-  margin: 2px;
-  border-radius: 8px;
-  background-color: #343434;
-}
-.containerDepoiment .containerArrowCarrossel .indicatorCarrossel .indicatorActive {
-  height: 8px;
-  width: 13px;
-  background-color: #BF0606;
+.containerDepoiment .disableButtonCarrossel {
+  background-color: red;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
-/* 
-
-.containerDepoimentUser{
-        margin-top: 100px;
-        //position: relative;
-}
-
-    	.containerCarrosselPersona{
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            .carrosselPersona{
-                display: flex;
-                align-items: end;
-                justify-content: center;
-                transition: transform 0.5s ease;
-                width: max-content;
-                //transform: translateX(550px);
-                img{
-                    height: 430px;
-                    flex-shrink: 0;
-                }
-                .activeCardPersona{
-                    height: 470px!important;
-                }
-            }
-        .containerArrowCarrossel{
-            position: absolute;
-            z-index: 1;
-            top: 250px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            padding: 0px 265px;
-
-        }
-
-        }
-
-        .indicatorCarrossel{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 35px 0px;
-
-            .indicator{
-                height: 8px;
-                width: 8px;
-                margin: 2px;
-                border-radius: 8px;
-                background-color: $black-color;
-            }
-
-            .indicatorActive{
-                height: 8px;
-                width: 13px;
-                background-color: $red-color;
-            }
-        }
-*/
 .containerContact {
   padding-top: 180px;
   display: flex;

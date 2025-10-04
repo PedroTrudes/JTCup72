@@ -1,0 +1,91 @@
+.containerDepoiment{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 245px;
+    max-width: 1440px;
+    .containerDepoimentText{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid red;
+        .textTitle{
+            max-width: 40%;
+        }
+        .textDescription{
+            max-width: 40%;
+        }
+    }
+
+    .containerCarrossel{
+        border: 1px solid blue;
+        width: 100%;
+        
+        .carrosselDepoiment{
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding: 20px;
+            max-width: 100%;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            .cardDepoiment{
+                width: 380px;
+                height: 470px;
+                flex-shrink: 0; /* evita que os itens diminuam */
+                scroll-snap-align: start; /* onde o item "encaixa" */
+                position: relative;
+                overflow: hidden;
+
+                .cardImage{
+                    width: 100%;
+                    height: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+                  .cardText {
+                    position: absolute;
+                    bottom: 0; // gruda no rodapé do card
+                    left: 0;
+                    width: 100%;
+                    background: #ffffffce; // fundo transparente para leitura
+                    color: $red-color;
+                    padding: 18px;
+
+                    .textHead {
+                        display: flex;
+                        justify-content: space-between;
+                        font-weight: bold;
+                        margin: 8px 0px;
+                    }
+
+                    .textDescription {
+                        text-align: center;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .containerCarrosselBtn{
+
+        }
+
+    .disableButtonCarrossel{
+        background-color: red;
+        cursor: not-allowed;
+        pointer-events: none;
+        }
+    }
