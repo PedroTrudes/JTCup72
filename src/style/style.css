@@ -161,19 +161,18 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-/* 
-.footer{
+.footer {
   display: none;
 }
 
-.header{
+.header {
   display: none;
 }
 
-.main{
+.main {
   display: none;
 }
-*/
+
 header {
   position: fixed;
   top: 25px;
