@@ -1,4 +1,4 @@
-const btnFaqs = document.querySelectorAll('button');
+const btnFaqs = document.querySelectorAll('.containerButtonFaq button');
 const contianerFaqPayment = document.querySelector('.faqPayment');
 const containerFaqVehicle = document.querySelector('.faqVehicle');
 const containerFaqAwards = document.querySelector('.faqAwards');
@@ -14,10 +14,9 @@ function activeFaq(idFaq) {
         containerFaqVehicle.classList.remove('isActiveFaqContainer');
         containerFaqAwards.classList.remove('isActiveFaqContainer');
         
-        //Logica do botao:
-        btnFaqs.item(2).classList.remove('isActiveFaq');
         btnFaqs.item(0).classList.remove('isActiveFaq');
         btnFaqs.item(1).classList.add('isActiveFaq');
+        btnFaqs.item(2).classList.remove('isActiveFaq');
 
     }else if(idFaq == 'vehicle'){
         containerFaqVehicle.classList.add('isActiveFaqContainer');
@@ -25,9 +24,9 @@ function activeFaq(idFaq) {
         containerFaqAwards.classList.remove('isActiveFaqContainer');
 
         //Logica do botao:
-        btnFaqs.item(2).classList.remove('isActiveFaq');
         btnFaqs.item(0).classList.add('isActiveFaq');
         btnFaqs.item(1).classList.remove('isActiveFaq');
+        btnFaqs.item(2).classList.remove('isActiveFaq');
 
     }else if(idFaq == 'awards'){
         containerFaqAwards.classList.add('isActiveFaqContainer');
@@ -35,9 +34,9 @@ function activeFaq(idFaq) {
         contianerFaqPayment.classList.remove('isActiveFaqContainer');
 
         //Logica do botao:
-        btnFaqs.item(2).classList.add('isActiveFaq');
-        btnFaqs.item(1).classList.remove('isActiveFaq');
         btnFaqs.item(0).classList.remove('isActiveFaq');
+        btnFaqs.item(1).classList.remove('isActiveFaq');
+        btnFaqs.item(2).classList.add('isActiveFaq');
     }
 }
 
