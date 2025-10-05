@@ -118,7 +118,11 @@
                 align-items: start;
                 justify-content: space-between;
                 .buttons{
+                    width: 70px;
+                    height: 70px;
                     margin: 10px;
+                    border-radius: 80px;
+                    font-size: 0.8em;
                 }
             }
             .categoryDivider{

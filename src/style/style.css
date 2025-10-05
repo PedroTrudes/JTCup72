@@ -783,7 +783,11 @@ main {
     justify-content: space-between;
   }
   .containerCategory .containerCategoryApresentation .categoryBotton .buttons {
+    width: 70px;
+    height: 70px;
     margin: 10px;
+    border-radius: 80px;
+    font-size: 0.8em;
   }
   .containerCategory .containerCategoryApresentation .categoryDivider {
     margin: 35px 0px;
