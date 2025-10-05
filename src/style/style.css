@@ -1222,11 +1222,12 @@ main {
   }
 }
 .containerFaq {
-  margin-top: 250px;
+  margin: 250px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 .containerFaq .textLink {
   color: #BF0606;
@@ -1240,7 +1241,6 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
-  width: 35%;
 }
 .containerFaq .containerButtonFaq button {
   background-color: #fff;
@@ -1253,6 +1253,7 @@ main {
   color: #BF0606;
   cursor: pointer;
   transition: all 0.6s ease-in-out;
+  margin: 0px 15px;
 }
 .containerFaq .containerButtonFaq .isActiveFaq {
   background-color: #BF0606;
