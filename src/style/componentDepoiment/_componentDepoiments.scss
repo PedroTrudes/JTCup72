@@ -127,3 +127,86 @@
         pointer-events: none;
         }
     }
+
+@media (max-width: 750px) {
+    .containerDepoiment{
+    display: flex;
+    flex-direction: column;
+    align-items: center  ;
+    margin-top: 120px;
+    max-width: 1440px;
+    width: 100%;
+    //border: 1px solid yellow;
+    .containerDepoimentText{
+        text-align: start;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        //border: 1px solid red;
+        padding-bottom: 100px;
+        width: 80%;
+        .textTitle{
+            max-width: 100%;
+        }
+        .textDescription{
+            max-width: 100%;
+        }
+    }
+
+    .containerCarrossel{
+        //border: 1px solid blue;
+        width: 100%;
+
+        
+        .carrosselDepoiment{
+            //border: 1px solid red;
+            width: 360px;
+                      
+            .cardDepoiment{
+                width: 360px;
+                height: 470px;
+
+                .cardImage{
+                    width: 100%;
+                    height: 100%;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+                }
+
+                  .cardText {
+                    position: absolute;
+                    bottom: 0; // gruda no rodapé do card
+                    left: 0;
+                    width: 100%;
+                    background: #ffffffce; // fundo transparente para leitura
+                    color: $red-color;
+                    padding: 18px;
+
+                    .textHead {
+                        margin: 8px 0px;
+                    }
+
+                    .textDescription {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .containerCarrosselBtn{
+        width: 60%;
+        button{
+            border: none;
+            background-color: transparent;
+            padding: 5px;
+            //border-radius: 25px;
+    }
+}
+    }
+}

@@ -7,8 +7,6 @@ const containerIndicator = document.querySelector(".carrosselIndicator");
 
 let cardWidth = card[0].offsetWidth;
 
-const indicatorCarrossel = containerIndicator.querySelectorAll("span");
-
 function updateCtas(){
     const maxScrollLeft = carrossel.scrollWidth - carrossel.clientWidth;
 
@@ -23,9 +21,15 @@ function updateCtas(){
     }else{
         btnNext.classList.remove("disableButtonCarrossel");
     } 
-
 }
 
+card.forEach((_, index) => {
+    const spanIndicator = document.createElement("span");
+    if(index === 0){
+        spanIndicator.classList.add("activeIndicator");
+    }
+    containerIndicator.appendChild(spanIndicator);
+})
 
 carrossel.addEventListener("scroll", updateCtas );
 
