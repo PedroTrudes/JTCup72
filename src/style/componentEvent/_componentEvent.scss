@@ -1,4 +1,5 @@
 .containerEvent{
+    width: 100%;
     padding-top: 225px;
     display: flex;
     flex-direction: column;
@@ -105,6 +106,7 @@
 @media (max-width: 750px) {
     .containerEvent{
         padding-top: 112px;
+        width: 100%;
         .containerCtaCalendario{
             margin-top: 25px;
             width: 80%;
@@ -143,9 +145,10 @@
 @media (max-width: 550px) {
     .containerEvent{
         padding-top: 112px;
+        width: 100%;
         .containerCardEvent{
             //border: 1px solid red;
-            width: 80%;
+            width: 90%;
             .cardEvent{
                 //border: 1px solid rgb(45, 202, 241);
                 width: 100%;

@@ -1372,6 +1372,7 @@ main {
   }
 }
 .containerEvent {
+  width: 100%;
   padding-top: 225px;
   display: flex;
   flex-direction: column;
@@ -1462,6 +1463,7 @@ main {
 @media (max-width: 750px) {
   .containerEvent {
     padding-top: 112px;
+    width: 100%;
   }
   .containerEvent .containerCtaCalendario {
     margin-top: 25px;
@@ -1490,9 +1492,10 @@ main {
 @media (max-width: 550px) {
   .containerEvent {
     padding-top: 112px;
+    width: 100%;
   }
   .containerEvent .containerCardEvent {
-    width: 80%;
+    width: 90%;
   }
   .containerEvent .containerCardEvent .cardEvent {
     width: 100%;
