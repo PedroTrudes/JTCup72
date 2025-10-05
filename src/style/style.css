@@ -1751,7 +1751,6 @@ footer .containerFooter .containerSocialLinks ul li a img {
   }
   .events .containerCardEvent {
     width: 100%;
-    border: 1px solid red;
     box-sizing: border-box;
   }
   .events .containerCardEvent .cardEventClose {
@@ -1805,21 +1804,31 @@ footer .containerFooter .containerSocialLinks ul li a img {
     font-size: 2em;
     width: 80%;
   }
+  .allEventsList .containerCardEvent {
+    width: 100%;
+    box-sizing: border-box;
+  }
   .allEventsList .containerCardEvent .cardEventClose {
-    width: 423px;
-    height: 675px;
-    margin: 12px 0px;
+    width: 100%;
+    height: 645px;
+    margin: 10px 0px;
+  }
+  .allEventsList .containerCardEvent .cardEventClose .eventFigure {
+    width: 100%;
   }
   .allEventsList .containerCardEvent .cardEventClose .eventFigure img {
-    width: 423px;
+    width: 100%;
   }
   .allEventsList .containerCardEvent .cardEvent {
-    width: 423px;
-    height: 675px;
-    margin: 12px 0px;
+    width: 100%;
+    height: 645px;
+    margin: 10px 0px;
+  }
+  .allEventsList .containerCardEvent .cardEvent .eventFigure {
+    width: 100%;
   }
   .allEventsList .containerCardEvent .cardEvent .eventFigure img {
-    width: 423px;
+    width: 100%;
   }
 }
 main {

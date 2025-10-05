@@ -25,26 +25,30 @@
         }
 
         .containerCardEvent {
+            width: 100%;
+            box-sizing: border-box;
             .cardEventClose {
-                width: 423px;
-                height: 675px;
-                margin: 12px 0px;
+                width: 100%;
+                height: 645px;
+                margin: 10px 0px;
 
                 .eventFigure {
+                    width: 100%;
                     img {
-                        width: 423px;
+                        width: 100%;
                     }
                 }
             }
 
             .cardEvent {
-                width: 423px;
-                height: 675px;
-                margin: 12px 0px;
+                width: 100%;
+                height: 645px;
+                margin: 10px 0px;
 
                 .eventFigure {
+                    width: 100%;
                     img {
-                        width: 423px;
+                        width: 100%;
                     }
                 }
             }
