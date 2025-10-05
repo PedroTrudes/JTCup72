@@ -4,14 +4,12 @@
     align-items: center;
     margin-top: 245px;
     max-width: 1440px;
-    //border: 1px solid red;
     .containerDepoimentText{
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        //border: 1px solid red;
         padding-bottom: 120px;
         .textTitle{
             max-width: 40%;
@@ -22,7 +20,6 @@
     }
 
     .containerCarrossel{
-        //border: 1px solid blue;
         width: 100%;
         display: flex;
         align-items: center;
@@ -32,7 +29,6 @@
             display: flex;
             overflow-x: auto;
             scroll-snap-type: x mandatory;
-            //padding: 20px 0px;
             max-width: 100%;
             
             &::-webkit-scrollbar {
@@ -44,8 +40,8 @@
             .cardDepoiment{
                 width: 360px;
                 height: 470px;
-                flex-shrink: 0; /* evita que os itens diminuam */
-                scroll-snap-align: start; /* onde o item "encaixa" */
+                flex-shrink: 0; 
+                scroll-snap-align: start;
                 position: relative;
                 overflow: hidden;
 
@@ -63,10 +59,10 @@
 
                   .cardText {
                     position: absolute;
-                    bottom: 0; // gruda no rodapé do card
+                    bottom: 0; 
                     left: 0;
                     width: 100%;
-                    background: #ffffffce; // fundo transparente para leitura
+                    background: #ffffffce;
                     color: $red-color;
                     padding: 18px;
 
@@ -87,7 +83,6 @@
     }
 
     .containerCarrosselBtn{
-        //border: 1px solid red;
         margin: 12px 0px;
         display: flex;
         width: 60%;
@@ -97,7 +92,6 @@
             border: none;
             background-color: transparent;
             padding: 5px;
-            //border-radius: 25px;
         }
 
         .carrosselIndicator {
@@ -121,7 +115,6 @@
     }
 
     .disableButtonCarrossel{
-        //background-color: red;
         opacity: 0.5;
         cursor: not-allowed;
         pointer-events: none;
@@ -136,13 +129,11 @@
     margin-top: 120px;
     max-width: 1440px;
     width: 100%;
-    border: 1px solid yellow;
     .containerDepoimentText{
         text-align: start;
         display: flex;
         align-items: start;
         flex-direction: column;
-        border: 1px solid red;
         padding-bottom: 100px;
         width: 80%;
         .textTitle{
@@ -154,12 +145,10 @@
     }
 
     .containerCarrossel{
-        border: 1px solid blue;
         width: 100%;
 
         
         .carrosselDepoiment{
-            border: 1px solid red;
             width: 360px;
                       
             .cardDepoiment{
@@ -180,10 +169,10 @@
 
                   .cardText {
                     position: absolute;
-                    bottom: 0; // gruda no rodapé do card
+                    bottom: 0;
                     left: 0;
                     width: 100%;
-                    background: #ffffffce; // fundo transparente para leitura
+                    background: #ffffffce;
                     color: $red-color;
                     padding: 18px;
 
@@ -201,12 +190,10 @@
 
     .containerCarrosselBtn{
         width: 60%;
-        border: 1px solid orange;
         button{
             border: none;
             background-color: transparent;
             padding: 5px;
-            //border-radius: 25px;
     }
 }
     }
