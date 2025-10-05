@@ -23,14 +23,6 @@ function updateCtas(){
     } 
 }
 
-card.forEach((_, index) => {
-    const spanIndicator = document.createElement("span");
-    if(index === 0){
-        spanIndicator.classList.add("activeIndicator");
-    }
-    containerIndicator.appendChild(spanIndicator);
-})
-
 carrossel.addEventListener("scroll", updateCtas );
 
 
