@@ -115,6 +115,8 @@
 @media (max-width: 750px) {
         .containerFaq{
             margin: 120px 0px;
+            width: 100%;
+            box-sizing: border-box;
             //border: 1px solid red;
             .containerFaqText{
                 //border: 1px solid yellow;
@@ -123,12 +125,12 @@
             }
 
             .containerButtonFaq{
-                //border: 1px solid red;
-                width: 80%;
+                border: 1px solid red;
+                width: 90%;
 
                 button{
                     margin: 10px;
-                    font-size: 1em;
+                    font-size: 0.8em;
                 }
             }
 

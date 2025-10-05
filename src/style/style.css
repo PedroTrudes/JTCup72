@@ -1322,17 +1322,20 @@ main {
 @media (max-width: 750px) {
   .containerFaq {
     margin: 120px 0px;
+    width: 100%;
+    box-sizing: border-box;
   }
   .containerFaq .containerFaqText {
     width: 80%;
     align-items: start;
   }
   .containerFaq .containerButtonFaq {
-    width: 80%;
+    border: 1px solid red;
+    width: 90%;
   }
   .containerFaq .containerButtonFaq button {
     margin: 10px;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .containerFaq .containerFaqs .faqsCard {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
