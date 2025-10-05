@@ -117,15 +117,13 @@
             margin: 120px 0px;
             width: 100%;
             box-sizing: border-box;
-            //border: 1px solid red;
+            
             .containerFaqText{
-                //border: 1px solid yellow;
                 width: 80%;
                 align-items: start;
             }
 
             .containerButtonFaq{
-                border: 1px solid red;
                 width: 90%;
 
                 button{
@@ -135,7 +133,8 @@
             }
 
             .containerFaqs{
-                //border: 1px solid orange;
+                width: 100%;
+                padding: 0px 34px;
                 .faqsCard{
                     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
                     padding: 12px;
