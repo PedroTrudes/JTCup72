@@ -59,7 +59,6 @@
   background-color: transparent;
   align-items: center;
   justify-content: center;
-  animation: scaleBackgoundFour 2.5s forwards;
 }
 .load .fontBold {
   font-weight: bold;
