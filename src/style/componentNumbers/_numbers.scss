@@ -3,12 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 
     .numbers{
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 60%;
+        max-width: 1440px;
 
         .numbersSpecs{
             display: flex;

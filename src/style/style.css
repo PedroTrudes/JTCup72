@@ -72,7 +72,7 @@
 .load .textAnimationOne {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.1s forwards, showText 3s forwards 3s;
+  animation: upText 0.3s forwards, showText 3s forwards 3s;
 }
 .load .textAnimationTwo {
   opacity: 0;
@@ -139,65 +139,6 @@
     height: 100vh;
   }
 }
-/*
- 50%{
-    height: 50vh;
-    //opacity: 1;
-    //visibility: hidden;
-  }75%{
-    height: 75vh;
-    //opacity: 1;
-    //visibility: hidden;
-  }100%{
-    height: 100vh;
-    //opacity: 1;
-    //visibility: hidden;
-  }
-*/
-@keyframes scaleBackgroundTwo {
-  0% {
-    height: 25vh;
-  }
-  100% {
-    height: 50vh;
-  }
-}
-@keyframes scaleBackgroundThree {
-  0% {
-    height: 50vh;
-  }
-  100% {
-    height: 75vh;
-  }
-}
-@keyframes scaleBackgoundOne {
-  to {
-    height: 25vh;
-    opacity: 1;
-    visibility: hidden;
-  }
-}
-@keyframes scaleBackgoundTwo {
-  to {
-    height: 50vh;
-    opacity: 1;
-    visibility: hidden;
-  }
-}
-@keyframes scaleBackgoundThree {
-  to {
-    height: 75vh;
-    opacity: 1;
-    visibility: hidden;
-  }
-}
-@keyframes scaleBackgoundFour {
-  to {
-    height: 100vh;
-    opacity: 1;
-    visibility: visible;
-  }
-}
 @keyframes upText {
   to {
     opacity: 1;
@@ -223,18 +164,20 @@ body::-webkit-scrollbar {
   box-sizing: border-box;
 }
 
-.footer {
-  display: none;
-}
+/*
+  .footer{
+    display: none;
+  }
 
-.header {
-  display: none;
-}
+  .header{
+    display: none;
+  }
 
-.main {
-  display: none;
-}
+  .main{
+    display: none;
+  }
 
+*/
 header {
   position: fixed;
   top: 25px;
@@ -503,12 +446,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .containerNumbers .numbers {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 60%;
+  max-width: 1440px;
 }
 .containerNumbers .numbers .numbersSpecs {
   display: flex;
@@ -577,10 +522,18 @@ main {
 */
 .containerAboutUs {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 }
-.containerAboutUs .containerAboutText {
+.containerAboutUs .aboutUs {
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.containerAboutUs .aboutUs .containerAboutText {
   width: 40%;
 }
 
@@ -608,8 +561,7 @@ main {
 }
 
 @media (max-width: 750px) {
-  .containerAboutUs {
-    display: flex;
+  .containerAboutUs .aboutUs {
     flex-direction: column;
   }
   .containerAboutUs .containerAboutText {
@@ -969,9 +921,15 @@ main {
   flex-direction: column;
   align-items: center;
   margin-top: 245px;
+  width: 100%;
+}
+.containerDepoiment .depoiment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1440px;
 }
-.containerDepoiment .containerDepoimentText {
+.containerDepoiment .depoiment .containerDepoimentText {
   text-align: center;
   display: flex;
   align-items: center;
@@ -979,19 +937,19 @@ main {
   flex-direction: column;
   padding-bottom: 120px;
 }
-.containerDepoiment .containerDepoimentText .textTitle {
+.containerDepoiment .depoiment .containerDepoimentText .textTitle {
   max-width: 40%;
 }
-.containerDepoiment .containerDepoimentText .textDescription {
+.containerDepoiment .depoiment .containerDepoimentText .textDescription {
   max-width: 40%;
 }
-.containerDepoiment .containerCarrossel {
+.containerDepoiment .depoiment .containerCarrossel {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment {
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -999,10 +957,10 @@ main {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment::-webkit-scrollbar {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment::-webkit-scrollbar {
   display: none;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment {
   width: 360px;
   height: 470px;
   flex-shrink: 0;
@@ -1010,18 +968,18 @@ main {
   position: relative;
   overflow: hidden;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage {
   width: 100%;
   height: 100%;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage img {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1030,45 +988,45 @@ main {
   color: #BF0606;
   padding: 18px;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textHead {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textHead {
   display: flex;
   justify-content: space-between;
   font-weight: bold;
   margin: 8px 0px;
 }
-.containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textDescription {
+.containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textDescription {
   text-align: center;
   font-size: 1rem;
 }
-.containerDepoiment .containerCarrosselBtn {
+.containerDepoiment .depoiment .containerCarrosselBtn {
   margin: 12px 0px;
   display: flex;
   width: 60%;
   justify-content: space-between;
   align-items: center;
 }
-.containerDepoiment .containerCarrosselBtn button {
+.containerDepoiment .depoiment .containerCarrosselBtn button {
   border: none;
   background-color: transparent;
   padding: 5px;
 }
-.containerDepoiment .containerCarrosselBtn .carrosselIndicator {
+.containerDepoiment .depoiment .containerCarrosselBtn .carrosselIndicator {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   gap: 8px;
 }
-.containerDepoiment .containerCarrosselBtn .carrosselIndicator span {
+.containerDepoiment .depoiment .containerCarrosselBtn .carrosselIndicator span {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #ccc;
   transition: background 0.3s ease;
 }
-.containerDepoiment .containerCarrosselBtn .carrosselIndicator span.activeIndicator {
+.containerDepoiment .depoiment .containerCarrosselBtn .carrosselIndicator span.activeIndicator {
   background: #333;
 }
-.containerDepoiment .disableButtonCarrossel {
+.containerDepoiment .depoiment .disableButtonCarrossel {
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;

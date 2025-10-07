@@ -1,9 +1,17 @@
 .containerAboutUs{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    .containerAboutText{
-        width: 40%;
+    width: 100%;
+    .aboutUs{
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        .containerAboutText{
+            width: 40%;
+        }
     }
 }
 
@@ -34,9 +42,10 @@
 
 
 @media (max-width: 750px) {
-        .containerAboutUs{
-        display: flex;
-        flex-direction: column;
+    .containerAboutUs{
+        .aboutUs{
+            flex-direction: column;
+        }
     .containerAboutText{
         width: 80%;
     }

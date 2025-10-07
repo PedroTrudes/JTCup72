@@ -76,7 +76,7 @@
   .textAnimationOne {
     opacity: 0;
     transform: translateY(100%);
-    animation: upText 0.1s forwards, showText 3s forwards 3s;
+    animation: upText 0.3s forwards, showText 3s forwards 3s;
     //animation: upText 0.2s forwards , showText 2s forwards;
   }
 
@@ -168,65 +168,6 @@
     height: 100vh;
     //opacity: 1;
     //visibility: hidden;
-  }
-}
-/*
- 50%{
-    height: 50vh;
-    //opacity: 1;
-    //visibility: hidden;
-  }75%{
-    height: 75vh;
-    //opacity: 1;
-    //visibility: hidden;
-  }100%{
-    height: 100vh;
-    //opacity: 1;
-    //visibility: hidden;
-  }
-*/
-@keyframes scaleBackgroundTwo {
-  0%{
-    height: 25vh;
-  }100%{
-    height: 50vh;
-  }
-}
-@keyframes scaleBackgroundThree {
-  0%{
-    height: 50vh;
-  }100%{
-    height: 75vh;
-  }
-}
-@keyframes scaleBackgoundOne {
-  to {
-    height: 25vh;
-    opacity: 1;
-    visibility: hidden;
-  }
-}
-
-@keyframes scaleBackgoundTwo {
-  to {
-    height: 50vh;
-    opacity: 1;
-    visibility: hidden;
-  }
-}
-@keyframes scaleBackgoundThree {
-  to {
-    height: 75vh;
-    opacity: 1;
-    visibility: hidden;
-  }
-}
-
-@keyframes scaleBackgoundFour {
-  to {
-    height: 100vh;
-    opacity: 1;
-    visibility: visible;
   }
 }
 

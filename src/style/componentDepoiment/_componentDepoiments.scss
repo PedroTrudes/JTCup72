@@ -1,200 +1,205 @@
-.containerDepoiment{
+.containerDepoiment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 245px;
+  width: 100%;
+  .depoiment {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 245px;
     max-width: 1440px;
-    .containerDepoimentText{
-        text-align: center;
+    .containerDepoimentText {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 120px;
+      .textTitle {
+        max-width: 40%;
+      }
+      .textDescription {
+        max-width: 40%;
+      }
+    }
+
+    .containerCarrossel {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .carrosselDepoiment {
         display: flex;
-        align-items: center;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        max-width: 100%;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+
+        .cardDepoiment {
+          width: 360px;
+          height: 470px;
+          flex-shrink: 0;
+          scroll-snap-align: start;
+          position: relative;
+          overflow: hidden;
+
+          .cardImage {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
+            }
+          }
+
+          .cardText {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #ffffffce;
+            color: $red-color;
+            padding: 18px;
+
+            .textHead {
+              display: flex;
+              justify-content: space-between;
+              font-weight: bold;
+              margin: 8px 0px;
+            }
+
+            .textDescription {
+              text-align: center;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .containerCarrosselBtn {
+      margin: 12px 0px;
+      display: flex;
+      width: 60%;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        border: none;
+        background-color: transparent;
+        padding: 5px;
+      }
+
+      .carrosselIndicator {
+        display: flex;
         justify-content: center;
-        flex-direction: column;
-        padding-bottom: 120px;
-        .textTitle{
-            max-width: 40%;
+        margin-top: 10px;
+        gap: 8px;
+
+        span {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #ccc;
+          transition: background 0.3s ease;
+
+          &.activeIndicator {
+            background: #333;
+          }
         }
-        .textDescription{
-            max-width: 40%;
-        }
+      }
     }
 
-    .containerCarrossel{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        .carrosselDepoiment{
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            max-width: 100%;
-            
-            &::-webkit-scrollbar {
-                display: none;
-            }
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-            
-            .cardDepoiment{
-                width: 360px;
-                height: 470px;
-                flex-shrink: 0; 
-                scroll-snap-align: start;
-                position: relative;
-                overflow: hidden;
-
-                .cardImage{
-                    width: 100%;
-                    height: 100%;
-
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        display: block;
-                    }
-                }
-
-                  .cardText {
-                    position: absolute;
-                    bottom: 0; 
-                    left: 0;
-                    width: 100%;
-                    background: #ffffffce;
-                    color: $red-color;
-                    padding: 18px;
-
-                    .textHead {
-                        display: flex;
-                        justify-content: space-between;
-                        font-weight: bold;
-                        margin: 8px 0px;
-                    }
-
-                    .textDescription {
-                        text-align: center;
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
+    .disableButtonCarrossel {
+      opacity: 0.5;
+      cursor: not-allowed;
+      pointer-events: none;
     }
-
-    .containerCarrosselBtn{
-        margin: 12px 0px;
-        display: flex;
-        width: 60%;
-        justify-content: space-between;
-        align-items: center;
-        button{
-            border: none;
-            background-color: transparent;
-            padding: 5px;
-        }
-
-        .carrosselIndicator {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-            gap: 8px;
-
-            span {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background: #ccc;
-                transition: background 0.3s ease;
-
-                &.activeIndicator {
-                background: #333;
-                }
-            }
-            }
-    }
-
-    .disableButtonCarrossel{
-        opacity: 0.5;
-        cursor: not-allowed;
-        pointer-events: none;
-        }
-    }
+  }
+}
 
 @media (max-width: 750px) {
-    .containerDepoiment{
+  .containerDepoiment {
     display: flex;
     flex-direction: column;
-    align-items: center  ;
+    align-items: center;
     margin-top: 120px;
     max-width: 1440px;
     width: 100%;
-    .containerDepoimentText{
-        text-align: start;
-        display: flex;
-        align-items: start;
-        flex-direction: column;
-        padding-bottom: 100px;
-        width: 80%;
-        .textTitle{
-            max-width: 100%;
-        }
-        .textDescription{
-            max-width: 100%;
-        }
+    .containerDepoimentText {
+      text-align: start;
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      padding-bottom: 100px;
+      width: 80%;
+      .textTitle {
+        max-width: 100%;
+      }
+      .textDescription {
+        max-width: 100%;
+      }
     }
 
-    .containerCarrossel{
-        width: 100%;
+    .containerCarrossel {
+      width: 100%;
 
-        
-        .carrosselDepoiment{
-            width: 360px;
-                      
-            .cardDepoiment{
-                width: 360px;
-                height: 470px;
+      .carrosselDepoiment {
+        width: 360px;
 
-                .cardImage{
-                    width: 100%;
-                    height: 100%;
+        .cardDepoiment {
+          width: 360px;
+          height: 470px;
 
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        display: block;
-                    }
-                }
+          .cardImage {
+            width: 100%;
+            height: 100%;
 
-                  .cardText {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    background: #ffffffce;
-                    color: $red-color;
-                    padding: 18px;
-
-                    .textHead {
-                        margin: 8px 0px;
-                    }
-
-                    .textDescription {
-                        font-size: 1rem;
-                    }
-                }
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              display: block;
             }
+          }
+
+          .cardText {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #ffffffce;
+            color: $red-color;
+            padding: 18px;
+
+            .textHead {
+              margin: 8px 0px;
+            }
+
+            .textDescription {
+              font-size: 1rem;
+            }
+          }
         }
+      }
     }
 
-    .containerCarrosselBtn{
-        width: 60%;
-        button{
-            border: none;
-            background-color: transparent;
-            padding: 5px;
+    .containerCarrosselBtn {
+      width: 60%;
+      button {
+        border: none;
+        background-color: transparent;
+        padding: 5px;
+      }
     }
-}
-    }
+  }
 }
