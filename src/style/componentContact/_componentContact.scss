@@ -6,13 +6,16 @@
 
     .contact{
         display: flex;
-        width: 75%;
+        width: 100%;
+        max-width: 1440px;
         justify-content: space-between;
         align-items: center;
 
         .containerContactText{
-            
             width: 50%;
+            .textDescription{
+                width: 70%;
+            }
             .buttonParticipate{
                 padding: 8px 24px;
                 background-color: $red-color;
@@ -71,19 +74,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        //border: 1px solid red;
         width: 100%;
         .contact{
             display: flex;
             flex-direction: column;
-            //border: 1px solid blue;
             width: 80%;
-            .containerContactText{            
-                //border: 1px solid yellow;
+            .containerContactText{         
+                width: 100%;
+                .textDescription{
                 width: 100%;
             }
+            }
             .containerContactImage{
-                //border: 1px solid red;
                 margin-top: 90px;
                 img{
                     width: 90%;

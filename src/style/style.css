@@ -1136,12 +1136,16 @@ main {
 }
 .containerContact .contact {
   display: flex;
-  width: 75%;
+  width: 100%;
+  max-width: 1440px;
   justify-content: space-between;
   align-items: center;
 }
 .containerContact .contact .containerContactText {
   width: 50%;
+}
+.containerContact .contact .containerContactText .textDescription {
+  width: 70%;
 }
 .containerContact .contact .containerContactText .buttonParticipate {
   padding: 8px 24px;
@@ -1208,6 +1212,9 @@ main {
     width: 80%;
   }
   .containerContact .contact .containerContactText {
+    width: 100%;
+  }
+  .containerContact .contact .containerContactText .textDescription {
     width: 100%;
   }
   .containerContact .contact .containerContactImage {
