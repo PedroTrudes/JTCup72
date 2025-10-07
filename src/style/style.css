@@ -1952,7 +1952,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0px 45px;
+  padding: 0px 25px;
 }
 .bannerCalender .banner .containerBannerCta .btnPrev button {
   border: none;
@@ -1976,6 +1976,18 @@ main {
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media (max-width: 550px) {
+  .bannerCalender .banner .bannerCarrossel .bannerImg {
+    width: 100%;
+  }
+  .bannerCalender .banner .bannerCarrossel .bannerImg .banner01Desk {
+    display: none;
+  }
+  .bannerCalender .banner .bannerCarrossel .bannerImg .banner01Mob {
+    display: block;
+    max-width: 550px;
   }
 }
 /*

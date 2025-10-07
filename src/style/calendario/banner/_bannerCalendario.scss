@@ -44,7 +44,7 @@ justify-content: center;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 0px 45px;
+            padding: 0px 25px;
             .btnPrev{
                 button {
                     border: none;
@@ -62,6 +62,8 @@ justify-content: center;
         }
   }
 }
+
+
 
 @media (max-width: 750px) {
 .bannerCalender {
@@ -84,7 +86,28 @@ justify-content: center;
 }
 
 }
+@media (max-width: 550px) {
+.bannerCalender {
+  .banner{
+    .bannerCarrossel{
+            .bannerImg{
+                width: 100%;
+                .banner01Desk{
+                    display: none;
+                    
+                }
+                .banner01Mob{
+                    display: block;
+                    //object-fit: cover;
+                    max-width: 550px;
+                    //height: auto;
+                }
+            }
+        }
+  }
+}
 
+}
 
 /*
 #carouselExample {
