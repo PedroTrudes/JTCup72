@@ -12,6 +12,9 @@
         max-width: 1440px;
         width: 100%;
         text-align: center;
+        .containerEventText{
+            width: 40%;
+        }
     
     .containerCtaCalendario{
         color: $red-color!important;

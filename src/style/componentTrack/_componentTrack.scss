@@ -1,119 +1,128 @@
-.containerTrack{
+.containerTrack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+  width: 100%;
+
+  .track {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
-    margin-top: 250px;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
 
-    .containerTrackText{
-        text-align: center;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        .textDescription{
-            max-width: 60%;
-        }
+    .containerTrackText {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .textDescription {
+        max-width: 60%;
+      }
     }
 
-    .containerTrackCards{
+    .containerTrackCards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 120px;
+
+      .trackCard {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        margin-top: 120px;
+        max-width: 500px;
+        margin: 15px;
+        background-color: $black-color;
+        border-radius: $border-radius-section;
+        padding: 25px;
 
-        .trackCard{
+        .cardInfos {
+          color: $withe-color;
+
+          .btnMaps {
+            text-decoration: none;
+            color: $withe-color;
+            background-color: $red-color;
+            padding: 3px 8px;
+            border-radius: $border-radius-button;
+            font-weight: $font-light;
+          }
+
+          h3 {
+            margin: 15px 0px;
+          }
+
+          span {
+            font-weight: $font-light;
+          }
+
+          .btnAction {
             display: flex;
-            align-items: center;
-            justify-content: center;
-            max-width: 500px;
-            margin: 15px;
-            background-color: $black-color;
-            border-radius: $border-radius-section;
-            padding: 25px;
-
-            .cardInfos{
-                color: $withe-color;
-
-                .btnMaps{
-                    text-decoration: none;
-                    color: $withe-color;
-                    background-color: $red-color;
-                    padding: 3px 8px;
-                    border-radius: $border-radius-button;
-                    font-weight: $font-light;
-                }
-
-                h3{
-                    margin: 15px 0px;
-                }
-
-                span{
-                    font-weight: $font-light;
-                }
-
-                .btnAction{
-                    display: flex;
-                    margin-top: 10px;
-                    a{
-                        text-decoration: none;
-                        color: $withe-color;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-around;
-                        width: 200px;
-                        padding: 4px;
-                        background-color: $red-color;
-                        border-radius: $border-radius-button;
-                        
-                        
-                    }
-                }
+            margin-top: 10px;
+            a {
+              text-decoration: none;
+              color: $withe-color;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              width: 200px;
+              padding: 4px;
+              background-color: $red-color;
+              border-radius: $border-radius-button;
             }
+          }
         }
+      }
     }
-
+  }
 }
 
 @media (max-width: 750px) {
-    .containerTrack{
-        margin-top: 120px;
-        .containerTrackText{
-            width: 80%;
-            text-align: start;
-            align-items: start;
-            .textDescription{
-                max-width: 100%;
-            }
+  .containerTrack {
+    margin-top: 120px;
+    .track {
+      .containerTrackText {
+        width: 80%;
+        text-align: start;
+        align-items: start;
+        .textDescription {
+          max-width: 100%;
         }
-        .containerTrackCards{
-            //border: 1px solid black;
-            margin-top: 20px;
-        }
+      }
+      .containerTrackCards {
+        //border: 1px solid black;
+        margin-top: 20px;
+      }
     }
+  }
 }
 
 @media (max-width: 550px) {
-        .containerTrack{
-        margin-top: 120px;
-
-        .containerTrackCards{
-            width: 80%;
-            .trackCard{
-                margin: 15px 0px;
-                width: 100%;
-                display: flex;
-                flex-direction: column-reverse;
-                .cardInfos{
-                    margin-top: 25px;
-                }
-                .cardImage {
-                    width: 100%;
-                    img{
-                        width: 100%;
-                    }
-                }
+  .containerTrack {
+    margin-top: 120px;
+    .track {
+      .containerTrackCards {
+        width: 80%;
+        .trackCard {
+          margin: 15px 0px;
+          width: 100%;
+          display: flex;
+          flex-direction: column-reverse;
+          .cardInfos {
+            margin-top: 25px;
+          }
+          .cardImage {
+            width: 100%;
+            img {
+              width: 100%;
             }
+          }
         }
+      }
     }
+  }
 }
