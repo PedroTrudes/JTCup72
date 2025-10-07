@@ -11,7 +11,7 @@
     position: absolute;
     width: 100%;
     height: 0vh;
-    background-color: #fff;
+    background-color: $withe-color;
     z-index: -1;
     animation: scaleBackground 10s;
   }
@@ -76,21 +76,21 @@
   .textAnimationOne {
     opacity: 0;
     transform: translateY(100%);
-    animation: upText 0.2s forwards, showText 2s forwards 2s;
+    animation: upText 0.1s forwards, showText 3s forwards 3s;
     //animation: upText 0.2s forwards , showText 2s forwards;
   }
 
   .textAnimationTwo {
     opacity: 0;
     transform: translateY(100%);
-    animation: upText 0.2s forwards, showText 2s forwards 2s;
+    animation: upText 0.1s forwards, showText 3s forwards 3s;
     //animation: upText 0.2s forwards, showText 2s forwards;
   }
 
   .textAnimationThree {
     opacity: 0;
     transform: translateY(100%);
-    animation: upText 0.2s forwards, showText 2s forwards 2s;
+    animation: upText 0.1s forwards, showText 3s forwards 3s;
     //animation: upText 0.2s forwards, showText 2s forwards;
   }
 

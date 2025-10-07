@@ -12,7 +12,7 @@
   position: absolute;
   width: 100%;
   height: 0vh;
-  background-color: #fff;
+  background-color: #F8F8F8;
   z-index: -1;
   animation: scaleBackground 10s;
 }
@@ -72,17 +72,17 @@
 .load .textAnimationOne {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.2s forwards, showText 2s forwards 2s;
+  animation: upText 0.1s forwards, showText 3s forwards 3s;
 }
 .load .textAnimationTwo {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.2s forwards, showText 2s forwards 2s;
+  animation: upText 0.1s forwards, showText 3s forwards 3s;
 }
 .load .textAnimationThree {
   opacity: 0;
   transform: translateY(100%);
-  animation: upText 0.2s forwards, showText 2s forwards 2s;
+  animation: upText 0.1s forwards, showText 3s forwards 3s;
 }
 .load .textAnimationFour {
   opacity: 0;
