@@ -6,43 +6,56 @@
   justify-content: center;
   background-color: black;
   position: relative;
+  z-index: -2;
+}
+.load .loadBackground {
+  position: absolute;
+  width: 100%;
+  height: 0vh;
+  background-color: #fff;
+  z-index: -1;
+  animation: scaleBackground 10s;
 }
 .load .containerLoadOne {
+  position: relative;
+  z-index: 10;
   display: flex;
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  height: 0vh;
-  background-color: #fff;
+  height: 100vh;
+  background-color: transparent;
   width: 100vw;
-  animation: scaleBackgoundOne 3s forwards;
 }
 .load .containerLoadTwo {
+  position: relative;
+  z-index: 11;
   display: none;
   overflow: hidden;
-  height: 25vh;
-  background-color: #fff;
+  height: 100vh;
+  background-color: transparent;
   width: 100%;
   align-items: center;
   justify-content: center;
-  animation: scaleBackgoundTwo 3s forwards;
 }
 .load .containerLoadThree {
+  position: relative;
+  z-index: 10;
   display: none;
-  height: 50vh;
+  height: 100vh;
   overflow: hidden;
-  background-color: #fff;
+  background-color: transparent;
   width: 100%;
   align-items: center;
   justify-content: center;
-  animation: scaleBackgoundThree 3s forwards;
 }
 .load .containerLoadFour {
+  position: relative;
   display: none;
-  height: 75vh;
+  height: 100vh;
   overflow: hidden;
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
   align-items: center;
   justify-content: center;
   animation: scaleBackgoundFour 2.5s forwards;
@@ -106,6 +119,54 @@
   }
   .load .containerLoadFour .textAnimation {
     font-size: 2rem;
+  }
+}
+@keyframes scaleBackground {
+  0% {
+    height: 0vh;
+  }
+  25% {
+    height: 25vh;
+  }
+  50% {
+    height: 50vh;
+  }
+  75% {
+    height: 75vh;
+  }
+  100% {
+    height: 100vh;
+  }
+}
+/*
+ 50%{
+    height: 50vh;
+    //opacity: 1;
+    //visibility: hidden;
+  }75%{
+    height: 75vh;
+    //opacity: 1;
+    //visibility: hidden;
+  }100%{
+    height: 100vh;
+    //opacity: 1;
+    //visibility: hidden;
+  }
+*/
+@keyframes scaleBackgroundTwo {
+  0% {
+    height: 25vh;
+  }
+  100% {
+    height: 50vh;
+  }
+}
+@keyframes scaleBackgroundThree {
+  0% {
+    height: 50vh;
+  }
+  100% {
+    height: 75vh;
   }
 }
 @keyframes scaleBackgoundOne {
