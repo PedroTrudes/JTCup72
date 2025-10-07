@@ -950,6 +950,7 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
+  width: 1000%;
 }
 .containerDepoiment .depoiment .containerDepoimentText {
   text-align: center;
@@ -1057,13 +1058,18 @@ main {
 @media (max-width: 750px) {
   .containerDepoiment {
     display: flex;
-    flex-direction: column;
     align-items: center;
     margin-top: 120px;
-    max-width: 1440px;
     width: 100%;
   }
-  .containerDepoiment .containerDepoimentText {
+  .containerDepoiment .depoiment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .containerDepoiment .depoiment .containerDepoimentText {
     text-align: start;
     display: flex;
     align-items: start;
@@ -1071,34 +1077,34 @@ main {
     padding-bottom: 100px;
     width: 80%;
   }
-  .containerDepoiment .containerDepoimentText .textTitle {
+  .containerDepoiment .depoiment .containerDepoimentText .textTitle {
     max-width: 100%;
   }
-  .containerDepoiment .containerDepoimentText .textDescription {
+  .containerDepoiment .depoiment .containerDepoimentText .textDescription {
     max-width: 100%;
   }
-  .containerDepoiment .containerCarrossel {
+  .containerDepoiment .depoiment .containerCarrossel {
     width: 100%;
   }
-  .containerDepoiment .containerCarrossel .carrosselDepoiment {
+  .containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment {
     width: 360px;
   }
-  .containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment {
+  .containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment {
     width: 360px;
     height: 470px;
   }
-  .containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage {
+  .containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage {
     width: 100%;
     height: 100%;
   }
-  .containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage img {
+  .containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardImage img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
   }
-  .containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText {
+  .containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1107,16 +1113,16 @@ main {
     color: #BF0606;
     padding: 18px;
   }
-  .containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textHead {
+  .containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textHead {
     margin: 8px 0px;
   }
-  .containerDepoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textDescription {
+  .containerDepoiment .depoiment .containerCarrossel .carrosselDepoiment .cardDepoiment .cardText .textDescription {
     font-size: 1rem;
   }
-  .containerDepoiment .containerCarrosselBtn {
+  .containerDepoiment .depoiment .containerCarrosselBtn {
     width: 60%;
   }
-  .containerDepoiment .containerCarrosselBtn button {
+  .containerDepoiment .depoiment .containerCarrosselBtn button {
     border: none;
     background-color: transparent;
     padding: 5px;
