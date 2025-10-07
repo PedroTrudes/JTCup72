@@ -29,7 +29,7 @@
 }
 .load .containerLoadTwo {
   position: relative;
-  z-index: 11;
+  z-index: 12;
   display: none;
   overflow: hidden;
   height: 100vh;
@@ -40,7 +40,7 @@
 }
 .load .containerLoadThree {
   position: relative;
-  z-index: 10;
+  z-index: 13;
   display: none;
   height: 100vh;
   overflow: hidden;
@@ -51,6 +51,7 @@
 }
 .load .containerLoadFour {
   position: relative;
+  z-index: 14;
   display: none;
   height: 100vh;
   overflow: hidden;

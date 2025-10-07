@@ -14,6 +14,19 @@ const containerWebHeader = document.querySelector(".header");
 const containerWebPage = document.querySelector(".main");
 const containerFooterPage = document.querySelector(".footer");
 
+window.addEventListener("load", () => {
+  const bg = containerAnimationBackground;
+
+  // Remove a animação temporariamente
+  bg.style.animation = "none";
+
+  // Força o reflow (obriga o navegador a reprocessar o layout)
+  void bg.offsetWidth;
+
+  // Reaplica a animação
+  bg.style.animation = "scaleBackground 10s forwards";
+});
+
 // --- CONTROLE DOS TEXTOS (continua com delays)
 textOne.forEach((text, i) => {
   text.style.animationDelay = `${i * 0.1}s`;
