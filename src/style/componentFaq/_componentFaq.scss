@@ -1,184 +1,194 @@
-.containerFaq{
-    margin: 250px 0px;
+.containerFaq {
+  margin: 250px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  .faq {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    max-width: 1440px;
     width: 100%;
+    .textLink {
+      color: $red-color;
+      font-weight: $font-light;
+      font-style: italic;
+      text-decoration: none;
+      text-decoration: underline;
+    }
 
-    .textLink{
+    .containerButtonFaq {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+      //width: 35%;
+
+      button {
+        background-color: #fff;
+        width: 190px;
+        height: 45px;
+        border-radius: $border-radius-section;
+        border: 1px solid $red-color;
+        font-size: 20px;
+        font-weight: $font-regular;
         color: $red-color;
-        font-weight: $font-light;
-        font-style: italic;
-        text-decoration: none;
-        text-decoration: underline;
+        cursor: pointer;
+        transition: all 0.6s ease-in-out;
+        margin: 0px 15px;
+      }
+      .isActiveFaq {
+        background-color: $red-color;
+        color: $withe-color;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+      }
     }
 
-    .containerButtonFaq{
+    .containerFaqText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .containerFaqs {
+      margin-top: 85px;
+      width: 80%;
+
+      .isActiveFaqContainer {
+        display: block !important;
+      }
+      .faqsCard {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        align-items: center;
-        margin-top: 50px;
-        //width: 35%;
+        margin: 10px 0px;
+        width: 100%;
 
-        button{
-            background-color: #fff;
-            width: 190px;
-            height: 45px;
-            border-radius: $border-radius-section;
-            border: 1px solid $red-color;
-            font-size: 20px;
-            font-weight: $font-regular;
-            color: $red-color;
-            cursor: pointer;
-            transition: all 0.6s ease-in-out;
-            margin: 0px 15px;
+        .cardIconCategory {
+          margin: 5px 25px;
+          img {
+            width: 42px;
+          }
         }
-        .isActiveFaq{
-            background-color: $red-color;
-            color: $withe-color;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
+        .cardIconArrow {
+          margin: 5px 25px;
+          img {
+            transition: transform 0.9s ease-in-out;
+            transform-origin: center;
+          }
+          .isArrowUp {
+            transform: rotate(180deg);
+          }
         }
-
+        .cardTextTitle {
+          width: 100%;
+          .cardTextSpan {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.9s ease, opacity 0.9s ease,
+              padding 0.7s ease;
+            padding-top: 0;
+          }
+          .cardTextSpanActive {
+            max-height: 500px;
+            opacity: 1;
+            padding-top: 10px;
+          }
+        }
+      }
     }
-
-    .containerFaqText{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .containerFaqs{
-        margin-top: 85px;
-        width: 80%;
-        
-        .isActiveFaqContainer{
-            display: block!important;
-        }
-        .faqsCard{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin: 10px 0px;
-            width: 100%;
-    
-            .cardIconCategory{
-                margin: 5px 25px;
-                img{
-                    width: 42px;
-                }
-            }
-            .cardIconArrow{
-                margin: 5px 25px;
-                img{
-                    transition: transform 0.9s ease-in-out;     transform-origin: center;  
-                }
-                .isArrowUp{
-                    transform: rotate(180deg);
-                }
-            }
-            .cardTextTitle{
-                width: 100%;
-                .cardTextSpan{
-                    max-height: 0;
-                    opacity: 0;
-                    overflow: hidden;
-                    transition: max-height 0.9s ease, opacity 0.9s ease, padding 0.7s ease;
-                    padding-top: 0;
-                }
-                .cardTextSpanActive{
-                    max-height: 500px;
-                    opacity: 1;
-                    padding-top: 10px;
-                }
-            }
-        }
-    }
-
+  }
 }
 
-    .faqVehicle{
-        display: none;
-    }
+.faqVehicle {
+  display: none;
+}
 
-    .faqPayment{
-        display: none;
-    }
-    .faqAwards{
-        display: none;
-    }
+.faqPayment {
+  display: none;
+}
+.faqAwards {
+  display: none;
+}
 
-    
 @media (max-width: 750px) {
-        .containerFaq{
-            margin: 120px 0px;
-            width: 100%;
-            box-sizing: border-box;
+  .containerFaq {
+    margin: 120px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    .faq{
+
+        .containerFaqText {
+            width: 80%;
+            align-items: start;
+        }
+        
+        .containerButtonFaq {
+            width: 90%;
             
-            .containerFaqText{
-                width: 80%;
-                align-items: start;
+            button {
+                margin: 10px;
+                font-size: 0.8em;
             }
-
-            .containerButtonFaq{
-                width: 90%;
-
-                button{
-                    margin: 10px;
-                    font-size: 0.8em;
-                }
-            }
-
-            .containerFaqs{
-                width: 100%;
-                padding: 0px 34px;
-                .faqsCard{
-                    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-                    padding: 12px;
-                    border-radius: $border-radius-button;
-                    .cardTextTitle{
-                        h3{
-                            font-size: 1.2em;
-                        }
+        }
+        
+        .containerFaqs {
+            width: 100%;
+            padding: 0px 34px;
+            .faqsCard {
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+                rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                padding: 12px;
+                border-radius: $border-radius-button;
+                .cardTextTitle {
+                    h3 {
+                        font-size: 1.2em;
                     }
                 }
             }
-
-
         }
+    }
+}
 }
 @media (max-width: 550px) {
-    .containerFaq{
-        .containerButtonFaq{
-                button{
-                    margin: 5px;
-                    font-size: 1em;
-                }
-            }
-            .containerFaqs{
-                .faqsCard{
-                    .cardIconCategory{
-                        img{
-                            width: 40px;
-                        }
-                    }
-                    .cardTextTitle{
-                        h3{
-                            font-size: 1em;
-                        }
-                        .cardTextSpan{
-                            span{
-                                font-size: 0.8em;
-                            }
-                        }
-                    }
-                    .cardIconArrow{
-                        img{
-                            width: 15px;
-                        }
-                    }
-                }
+  .containerFaq {
+    .faq{
+
+        .containerButtonFaq {
+            button {
+                margin: 5px;
+                font-size: 1em;
             }
         }
+        .containerFaqs {
+            .faqsCard {
+                .cardIconCategory {
+                    img {
+                        width: 40px;
+                    }
+        }
+        .cardTextTitle {
+            h3 {
+                font-size: 1em;
+            }
+            .cardTextSpan {
+                span {
+              font-size: 0.8em;
+            }
+        }
+    }
+    .cardIconArrow {
+        img {
+            width: 15px;
+        }
+    }
+}
+}
+}
+}
 }

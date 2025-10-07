@@ -1280,23 +1280,30 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   width: 100%;
 }
-.containerFaq .textLink {
+.containerFaq .faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+}
+.containerFaq .faq .textLink {
   color: #BF0606;
   font-weight: 300;
   font-style: italic;
   text-decoration: none;
   text-decoration: underline;
 }
-.containerFaq .containerButtonFaq {
+.containerFaq .faq .containerButtonFaq {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
 }
-.containerFaq .containerButtonFaq button {
+.containerFaq .faq .containerButtonFaq button {
   background-color: #fff;
   width: 190px;
   height: 45px;
@@ -1309,58 +1316,58 @@ main {
   transition: all 0.6s ease-in-out;
   margin: 0px 15px;
 }
-.containerFaq .containerButtonFaq .isActiveFaq {
+.containerFaq .faq .containerButtonFaq .isActiveFaq {
   background-color: #BF0606;
   color: #F8F8F8;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
 }
-.containerFaq .containerFaqText {
+.containerFaq .faq .containerFaqText {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.containerFaq .containerFaqs {
+.containerFaq .faq .containerFaqs {
   margin-top: 85px;
   width: 80%;
 }
-.containerFaq .containerFaqs .isActiveFaqContainer {
+.containerFaq .faq .containerFaqs .isActiveFaqContainer {
   display: block !important;
 }
-.containerFaq .containerFaqs .faqsCard {
+.containerFaq .faq .containerFaqs .faqsCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 10px 0px;
   width: 100%;
 }
-.containerFaq .containerFaqs .faqsCard .cardIconCategory {
+.containerFaq .faq .containerFaqs .faqsCard .cardIconCategory {
   margin: 5px 25px;
 }
-.containerFaq .containerFaqs .faqsCard .cardIconCategory img {
+.containerFaq .faq .containerFaqs .faqsCard .cardIconCategory img {
   width: 42px;
 }
-.containerFaq .containerFaqs .faqsCard .cardIconArrow {
+.containerFaq .faq .containerFaqs .faqsCard .cardIconArrow {
   margin: 5px 25px;
 }
-.containerFaq .containerFaqs .faqsCard .cardIconArrow img {
+.containerFaq .faq .containerFaqs .faqsCard .cardIconArrow img {
   transition: transform 0.9s ease-in-out;
   transform-origin: center;
 }
-.containerFaq .containerFaqs .faqsCard .cardIconArrow .isArrowUp {
+.containerFaq .faq .containerFaqs .faqsCard .cardIconArrow .isArrowUp {
   transform: rotate(180deg);
 }
-.containerFaq .containerFaqs .faqsCard .cardTextTitle {
+.containerFaq .faq .containerFaqs .faqsCard .cardTextTitle {
   width: 100%;
 }
-.containerFaq .containerFaqs .faqsCard .cardTextTitle .cardTextSpan {
+.containerFaq .faq .containerFaqs .faqsCard .cardTextTitle .cardTextSpan {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
   transition: max-height 0.9s ease, opacity 0.9s ease, padding 0.7s ease;
   padding-top: 0;
 }
-.containerFaq .containerFaqs .faqsCard .cardTextTitle .cardTextSpanActive {
+.containerFaq .faq .containerFaqs .faqsCard .cardTextTitle .cardTextSpanActive {
   max-height: 500px;
   opacity: 1;
   padding-top: 10px;
@@ -1384,45 +1391,45 @@ main {
     width: 100%;
     box-sizing: border-box;
   }
-  .containerFaq .containerFaqText {
+  .containerFaq .faq .containerFaqText {
     width: 80%;
     align-items: start;
   }
-  .containerFaq .containerButtonFaq {
+  .containerFaq .faq .containerButtonFaq {
     width: 90%;
   }
-  .containerFaq .containerButtonFaq button {
+  .containerFaq .faq .containerButtonFaq button {
     margin: 10px;
     font-size: 0.8em;
   }
-  .containerFaq .containerFaqs {
+  .containerFaq .faq .containerFaqs {
     width: 100%;
     padding: 0px 34px;
   }
-  .containerFaq .containerFaqs .faqsCard {
+  .containerFaq .faq .containerFaqs .faqsCard {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     padding: 12px;
     border-radius: 8px;
   }
-  .containerFaq .containerFaqs .faqsCard .cardTextTitle h3 {
+  .containerFaq .faq .containerFaqs .faqsCard .cardTextTitle h3 {
     font-size: 1.2em;
   }
 }
 @media (max-width: 550px) {
-  .containerFaq .containerButtonFaq button {
+  .containerFaq .faq .containerButtonFaq button {
     margin: 5px;
     font-size: 1em;
   }
-  .containerFaq .containerFaqs .faqsCard .cardIconCategory img {
+  .containerFaq .faq .containerFaqs .faqsCard .cardIconCategory img {
     width: 40px;
   }
-  .containerFaq .containerFaqs .faqsCard .cardTextTitle h3 {
+  .containerFaq .faq .containerFaqs .faqsCard .cardTextTitle h3 {
     font-size: 1em;
   }
-  .containerFaq .containerFaqs .faqsCard .cardTextTitle .cardTextSpan span {
+  .containerFaq .faq .containerFaqs .faqsCard .cardTextTitle .cardTextSpan span {
     font-size: 0.8em;
   }
-  .containerFaq .containerFaqs .faqsCard .cardIconArrow img {
+  .containerFaq .faq .containerFaqs .faqsCard .cardIconArrow img {
     width: 15px;
   }
 }
