@@ -575,8 +575,17 @@ main {
 .containerServices {
   margin-top: 200px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.containerServices .services {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .containerServices .carousel {
   display: none;
@@ -592,6 +601,9 @@ main {
   align-items: center;
   text-align: center;
 }
+.containerServices .containerServicesCards .cardServices {
+  max-width: 20%;
+}
 .containerServices .containerServicesCards .cardServices img {
   width: 250px;
 }
@@ -605,17 +617,6 @@ main {
   font-weight: 400;
 }
 
-@media (max-width: 1440px) {
-  .containerServices .containerServicesCards .cardServices {
-    width: 30%;
-  }
-  .containerServices .containerServicesCards .cardServices img {
-    width: 130px;
-  }
-  .containerServices .carousel {
-    display: none;
-  }
-}
 @media (max-width: 750px) {
   .containerServices {
     margin-top: 125px;
