@@ -823,7 +823,6 @@ main {
   }
   .containerCategory .category .containerCategoryApresentation .categoryDescription .categoryText {
     max-width: 100%;
-    border: 1px solid red;
   }
 }
 .containerTrack {
@@ -1410,30 +1409,30 @@ main {
   width: 100%;
   padding-top: 225px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.containerEvent .event {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
   text-align: center;
 }
-.containerEvent .containerCtaCalendario {
-  width: 55%;
-  margin-top: 95px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: end;
-  justify-content: end;
+.containerEvent .event .containerCtaCalendario {
+  color: #BF0606 !important;
 }
-.containerEvent .containerCtaCalendario a {
-  color: #BF0606;
-}
-.containerEvent .containerCardEvent {
+.containerEvent .event .containerCardEvent {
+  margin-top: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.containerEvent .containerCardEvent .cardEvent {
+.containerEvent .event .containerCardEvent .cardEvent {
   width: 323px;
   height: 576px;
   display: flex;
@@ -1446,50 +1445,50 @@ main {
   border-radius: 8px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText {
   display: flex;
   flex-direction: column;
   padding: 32px;
   width: 100%;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextTitle {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextTitle {
   margin-bottom: 26px;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextTitle h3 {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextTitle h3 {
   color: #BF0606;
   font-weight: 700;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextTitle span {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextTitle span {
   color: #343434;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextInformation {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextInformation {
   display: flex;
   flex-direction: column;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextLocalization {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextLocalization {
   color: #BF0606;
   font-weight: 300;
   font-size: 0.8em;
   margin-bottom: 10px;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextTime {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextInformation .eventTextTime {
   color: #343434;
   font-weight: 700;
   font-size: 1em;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextDate {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextDate {
   margin-top: 18px;
   display: flex;
   align-items: center;
   justify-content: start;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventDay {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventDay {
   color: #BF0606;
   font-size: 2em;
   font-weight: 700;
   margin-right: 12px;
 }
-.containerEvent .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventMonth {
+.containerEvent .event .containerCardEvent .cardEvent .cardEventText .eventTextDate .eventMonth {
   font-size: 1.5em;
   font-weight: 300;
   color: #343434;
@@ -1500,27 +1499,23 @@ main {
     padding-top: 112px;
     width: 100%;
   }
-  .containerEvent .containerCtaCalendario {
-    margin-top: 25px;
+  .containerEvent .event {
     width: 80%;
   }
-  .containerEvent .containerEventText {
-    width: 80%;
+  .containerEvent .event .containerEventText {
+    width: 100%;
     text-align: start;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: start;
   }
-  .containerEvent .containerCtaCalendario {
-    padding: 0px 12px 0px 0px;
-  }
-  .containerEvent .containerCardEvent .cardEvent {
+  .containerEvent .event .containerCardEvent .cardEvent {
     width: 423px;
     height: 675px;
     margin: 12px 0px;
   }
-  .containerEvent .containerCardEvent .cardEvent .eventFigure img {
+  .containerEvent .event .containerCardEvent .cardEvent .eventFigure img {
     width: 423px;
   }
 }
@@ -1529,19 +1524,24 @@ main {
     padding-top: 112px;
     width: 100%;
   }
-  .containerEvent .containerCardEvent {
-    width: 100%;
+  .containerEvent .event {
+    width: 80%;
   }
-  .containerEvent .containerCardEvent .cardEvent {
+  .containerEvent .event .containerCardEvent {
+    width: 100%;
+    padding: 0px;
+  }
+  .containerEvent .event .containerCardEvent .cardEvent {
     width: 100%;
     height: 500px;
+    margin: 12px 0px;
   }
-  .containerEvent .containerCardEvent .cardEvent .eventFigure {
+  .containerEvent .event .containerCardEvent .cardEvent .eventFigure {
     width: 100%;
     overflow: hidden;
     border-radius: 0px 0px 8px 8px;
   }
-  .containerEvent .containerCardEvent .cardEvent .eventFigure img {
+  .containerEvent .event .containerCardEvent .cardEvent .eventFigure img {
     width: 100%;
     height: auto;
     -o-object-fit: cover;
