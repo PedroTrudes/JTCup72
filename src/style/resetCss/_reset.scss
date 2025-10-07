@@ -1,10 +1,10 @@
-@import '../variables';
+@import "../variables";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: $font-styles;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-styles;
+  scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -14,17 +14,14 @@ body::-webkit-scrollbar {
 }
 
 //Necessario colocar com display no para ativar a animacao de abertura da pagina
-/*
-  .footer{
-    display: none;
-  }
+.footer {
+  display: none;
+}
 
-  .header{
-    display: none;
-  }
+.header {
+  display: none;
+}
 
-  .main{
-    display: none;
-  }
-
-*/
+.main {
+  display: none;
+}
