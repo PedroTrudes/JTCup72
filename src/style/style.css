@@ -950,7 +950,7 @@ main {
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
-  width: 1000%;
+  width: 100%;
 }
 .containerDepoiment .depoiment .containerDepoimentText {
   text-align: center;
@@ -1906,5 +1906,93 @@ main {
 }
 
 .bannerCalender {
-  border: 1px solid red;
-}/*# sourceMappingURL=style.css.map */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bannerCalender .banner {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.bannerCalender .banner::-webkit-scrollbar {
+  display: none;
+}
+.bannerCalender .banner .bannerCarrossel {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  max-width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.bannerCalender .banner .bannerCarrossel::-webkit-scrollbar {
+  display: none;
+}
+.bannerCalender .banner .bannerCarrossel .bannerImg {
+  width: 100%;
+}
+.bannerCalender .banner .bannerCarrossel .bannerImg .banner01Desk {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bannerCalender .banner .bannerCarrossel .bannerImg .banner01Mob {
+  display: none;
+}
+.bannerCalender .banner .containerBannerCta {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 45px;
+}
+.bannerCalender .banner .containerBannerCta .btnPrev button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+.bannerCalender .banner .containerBannerCta .btnNext button {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+}
+
+@media (max-width: 750px) {
+  .bannerCalender .banner .bannerCarrossel .bannerImg {
+    width: 100%;
+  }
+  .bannerCalender .banner .bannerCarrossel .bannerImg .banner01Desk {
+    display: none;
+  }
+  .bannerCalender .banner .bannerCarrossel .bannerImg .banner01Mob {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/*
+#carouselExample {
+      .carousel-inner{
+        .carousel-item {
+
+            #banner01-desk {
+                width: 100%;
+                max-width: 1440px;
+                height: 750px;
+            }
+            #banner01-mob {
+                display: none!important;
+                border: 1px solid red!important;
+            }
+        }
+    }
+  }
+*//*# sourceMappingURL=style.css.map */

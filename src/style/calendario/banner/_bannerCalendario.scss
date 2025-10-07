@@ -1,3 +1,106 @@
-.bannerCalender{
-    border: 1px solid red;
+.bannerCalender {
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+  .banner{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    .bannerCarrossel{
+        display: flex;
+        position: relative;
+        overflow-x: auto;
+        max-width: 100%;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+            .bannerImg{
+                width: 100%;
+                .banner01Desk{
+                    //width: 100%;
+                    object-fit: cover;
+                }
+                .banner01Mob{
+                    display: none;
+                }
+            }
+        }
+        .containerBannerCta{
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            //border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0px 45px;
+            .btnPrev{
+                button {
+                    border: none;
+                    background-color: transparent;
+                    padding: 5px;
+                }
+            }
+            .btnNext{
+                button {
+                    border: none;
+                    background-color: transparent;
+                    padding: 5px;
+                }
+            }
+        }
+  }
 }
+
+@media (max-width: 750px) {
+.bannerCalender {
+  .banner{
+    .bannerCarrossel{
+            .bannerImg{
+                width: 100%;
+                
+                .banner01Desk{
+                    display: none;
+                    
+                }
+                .banner01Mob{
+                    display: block;
+                    object-fit: cover;
+                }
+            }
+        }
+  }
+}
+
+}
+
+
+/*
+#carouselExample {
+      .carousel-inner{
+        .carousel-item {
+   
+            #banner01-desk {
+                width: 100%;
+                max-width: 1440px;
+                height: 750px;
+            }
+            #banner01-mob {
+                display: none!important;
+                border: 1px solid red!important;
+            }
+        }
+    }
+  }
+*/
