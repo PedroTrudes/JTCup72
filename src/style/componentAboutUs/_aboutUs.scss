@@ -45,13 +45,15 @@
     .containerAboutUs{
         .aboutUs{
             flex-direction: column;
+            width: 100%;
+            
+            .containerAboutText{
+                width: 80%;
+            }
+            .containerAboutImage{
+                margin-top: 65px;
+                width: 80%;
+            }
         }
-    .containerAboutText{
-        width: 80%;
-    }
-    .containerAboutImage{
-        margin-top: 65px;
-        width: 80%;
-    }
 }
 }

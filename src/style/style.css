@@ -563,11 +563,12 @@ main {
 @media (max-width: 750px) {
   .containerAboutUs .aboutUs {
     flex-direction: column;
+    width: 100%;
   }
-  .containerAboutUs .containerAboutText {
+  .containerAboutUs .aboutUs .containerAboutText {
     width: 80%;
   }
-  .containerAboutUs .containerAboutImage {
+  .containerAboutUs .aboutUs .containerAboutImage {
     margin-top: 65px;
     width: 80%;
   }
@@ -697,28 +698,37 @@ main {
   flex-direction: column;
   justify-content: center;
   padding-top: 250px;
+  width: 100%;
 }
-.containerCategory .containerCategoryText {
+.containerCategory .category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+}
+.containerCategory .category .containerCategoryText {
   text-align: center;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.containerCategory .containerCategoryText .textDescription {
+.containerCategory .category .containerCategoryText .textDescription {
   max-width: 60%;
 }
-.containerCategory .containerCategoryApresentation {
+.containerCategory .category .containerCategoryApresentation {
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 95px;
   width: 75%;
 }
-.containerCategory .containerCategoryApresentation .categoryBotton {
+.containerCategory .category .containerCategoryApresentation .categoryBotton {
   display: flex;
   flex-direction: column;
 }
-.containerCategory .containerCategoryApresentation .categoryBotton .buttons {
+.containerCategory .category .containerCategoryApresentation .categoryBotton .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -729,27 +739,27 @@ main {
   background-color: #343434;
   color: #F8F8F8;
 }
-.containerCategory .containerCategoryApresentation .categoryBotton .buttons :hover {
+.containerCategory .category .containerCategoryApresentation .categoryBotton .buttons :hover {
   cursor: pointer;
 }
-.containerCategory .containerCategoryApresentation .categoryBotton .isActive {
+.containerCategory .category .containerCategoryApresentation .categoryBotton .isActive {
   transition: all 0.5s ease-in-out;
   background-color: #BF0606 !important;
 }
-.containerCategory .containerCategoryApresentation .categoryDivider {
+.containerCategory .category .containerCategoryApresentation .categoryDivider {
   height: 300px;
   width: 5px;
   background-color: #df8383;
   border-radius: 18px;
 }
-.containerCategory .containerCategoryApresentation .categoryDescription {
+.containerCategory .category .containerCategoryApresentation .categoryDescription {
   width: 50%;
 }
-.containerCategory .containerCategoryApresentation .categoryDescription .categoryText {
+.containerCategory .category .containerCategoryApresentation .categoryDescription .categoryText {
   display: none;
   max-width: 80%;
 }
-.containerCategory .containerCategoryApresentation .categoryDescription .categoryText .buttonParticipate {
+.containerCategory .category .containerCategoryApresentation .categoryDescription .categoryText .buttonParticipate {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -762,13 +772,13 @@ main {
   border-radius: 8px;
   color: #F8F8F8;
 }
-.containerCategory .containerCategoryApresentation .categoryDescription .categoryText .buttonParticipate img {
+.containerCategory .category .containerCategoryApresentation .categoryDescription .categoryText .buttonParticipate img {
   transition: transform 0.3s ease-in-out;
 }
-.containerCategory .containerCategoryApresentation .categoryDescription .categoryText .buttonParticipate img:hover {
+.containerCategory .category .containerCategoryApresentation .categoryDescription .categoryText .buttonParticipate img:hover {
   transform: rotate(45deg);
 }
-.containerCategory .containerCategoryApresentation .categoryDescription .isActive {
+.containerCategory .category .containerCategoryApresentation .categoryDescription .isActive {
   display: block !important;
   transition: all 2s ease-in-out;
 }
@@ -778,38 +788,42 @@ main {
     margin-top: 120px;
     padding-top: 0px;
   }
-  .containerCategory .containerCategoryText {
+  .containerCategory .category .containerCategoryText {
     width: 80%;
     text-align: start;
     align-items: start;
   }
-  .containerCategory .containerCategoryText .textDescription {
+  .containerCategory .category .containerCategoryText .textDescription {
     max-width: 100%;
   }
-  .containerCategory .containerCategoryApresentation {
+  .containerCategory .category .containerCategoryApresentation {
     margin-top: 25px;
     flex-direction: column;
   }
-  .containerCategory .containerCategoryApresentation .categoryBotton {
+  .containerCategory .category .containerCategoryApresentation .categoryBotton {
     width: 100%;
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
   }
-  .containerCategory .containerCategoryApresentation .categoryBotton .buttons {
+  .containerCategory .category .containerCategoryApresentation .categoryBotton .buttons {
     width: 70px;
     height: 70px;
     margin: 10px;
     border-radius: 80px;
     font-size: 0.8em;
   }
-  .containerCategory .containerCategoryApresentation .categoryDivider {
+  .containerCategory .category .containerCategoryApresentation .categoryDivider {
     margin: 35px 0px;
     width: 90%;
     height: 4px;
   }
-  .containerCategory .containerCategoryApresentation .categoryDescription {
+  .containerCategory .category .containerCategoryApresentation .categoryDescription {
     width: 100%;
+  }
+  .containerCategory .category .containerCategoryApresentation .categoryDescription .categoryText {
+    max-width: 100%;
+    border: 1px solid red;
   }
 }
 .containerTrack {
